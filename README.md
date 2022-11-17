@@ -1,4 +1,4 @@
-# Coffee Comapnion
+# Coffee Companion
 
 ## Group Members
 ..

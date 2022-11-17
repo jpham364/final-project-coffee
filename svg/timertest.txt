@@ -1,1 +1,5 @@
+Timer Test
 
+Goal: Timer test is a folder used for me to test timer hopefully coded by 11/20/22
+
+Will try add comment to what propertes needed to be changed so that timer can be ajusted for each varable(size, time it counts down, alerts);

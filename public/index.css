@@ -4,22 +4,28 @@ body{
 }
 
 .navBar{
-    display: flex;
+    
     background-color: rgb(187, 137, 85);
-}
-
-.title a{
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration: none;
+    height: 100px;
     
 }
 
-.poTab a{
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration: none;
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+
+    position: relative;
+    bottom: -15px;
+    /* border: 1px solid black; */
 }
 
-.espTab a{
+
+.navLinks a{
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
+    color: black;
+}
+
+.title a{
+    font-size: 50px;
 }

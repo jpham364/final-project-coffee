@@ -50,17 +50,6 @@ body{
     margin: 15px;
 
 }
-/*
- width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    perspective: 1000px; 
-    
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 5px;
-    background-color: transparent;
-*/
 
 .drink-content {
     position: relative;
@@ -72,16 +61,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-/*
-.drink{
-    position: relative;
-    background-color: transparent;
-    width: 100%;
-    height: 100%; 
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-*/
 
 .flip-card-front, .flip-card-back{
     position: absolute;
@@ -124,69 +103,4 @@ body{
     max-height: 240px;
     max-width: 240px;
 }
-/* Referencing w3schools for flip card animation */
-/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
-/*
-#poDrinks {
-    display: block;
-    margin: 75px;
-}
 
-.drink-flip {
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    perspective: 1000px; 
-    margin: 15px;
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-.drink-flip:hover .drink{
-    transform: rotateY(180deg);
-}
-
-.drink{
-    position: relative;
-    background-color: transparent;
-    width: 100%;
-    height: 100%; 
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
-.flip-card-front, .flip-card-back{
-    position: absolute;
-    display: flex;
-    backface-visibility: hidden;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.flip-card-front{
-    
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-    clip-path: circle();
-    
-}
-
-.flip-card-back{
-    background-color: black;
-    color: white;
-    clip-path: circle();
-    transform: rotateY(180deg);
-}
-
-.image-container img {
-    max-height: 240px;
-    max-width: 240px;
-}
-*/

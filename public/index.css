@@ -35,16 +35,20 @@ body{
 
 #poDrinks {
     display: block;
+    margin: 75px;
 }
 
 .drink{
     background-color: transparent;
-    width: 300px;
+    width: 400px;
     height: 300px;
     border: 1px solid black;
     perspective: 1000px;
     display: inline-block;
     vertical-align: top;
+    border-radius: 5px;
+    margin: 15px;
+
 }
 
 .drink-content {

@@ -82,8 +82,8 @@ body{
 }
 
 .flip-card-back{
-    background-color: black;
-    color: white;
+    background-color: rgb(187, 137, 85);
+    color: black;
     clip-path: circle();
     transform: rotateY(180deg);
 }

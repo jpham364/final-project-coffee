@@ -98,9 +98,10 @@ body{
 
 
 /* image size */
-
-.image-container img {
-    max-height: 240px;
-    max-width: 240px;
+/* this can change if you want i just made the images circle because thats what we have in the example*/
+.image-container img { 
+    max-height: 100%;
+    max-width: 100%;
+    clip-path: 50%;
 }
 

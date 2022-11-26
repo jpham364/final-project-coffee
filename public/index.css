@@ -3,28 +3,50 @@ body{
     padding: 0;
 }
 
+
+
+.logo{
+    
+    height: 125px;
+    width: 300px;
+
+    height: auto;
+
+    position:relative;
+    left: 50px;
+}
+
 .navBar{
     
-    background-color: rgb(187, 137, 85);
-    height: 100px;
-    
+    display: flex;
+    background-color: rgb(186, 136, 84);
+    height: 155px;
+
 }
 
 .navLinks{
-    display: flex;
-    justify-content: space-around;
 
-    position: relative;
-    bottom: -15px;
-    /* border: 1px solid black; */
+    display: flex;
+    margin-left: auto;
+    overflow: hidden;
+
 }
 
-
 .navLinks a{
+
+    display: flex;
+    margin-left: auto;
+    min-width: 0;
+    
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     color: black;
-}
+    margin: 65px;
+    float: left;
+    font-size: 30px;
+    
+} 
+
 
 .title a{
     font-size: 50px;
@@ -36,7 +58,8 @@ body{
 #poDrinks {
     display: block;
     margin: 75px;
-    border: 1px solid black;
+    /* border: 1px solid black;  */
+
 
     /* adding flexbox property*/
     display: flex;

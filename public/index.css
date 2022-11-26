@@ -36,13 +36,19 @@ body{
 #poDrinks {
     display: block;
     margin: 75px;
+    border: 1px solid black;
+
+    /* adding flexbox property*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .drink{
     background-color: transparent;
     width: 400px;
     height: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     perspective: 1000px;
     display: inline-block;
     vertical-align: top;

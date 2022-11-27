@@ -119,6 +119,11 @@ body{
     transform: rotateY(180deg);
 }
 
+.flip-card-back a{
+    color: black;
+    text-decoration: none;
+}
+
 .drink:hover .drink-content{
     transform: rotateY(180deg);
 }

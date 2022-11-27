@@ -141,3 +141,10 @@ body{
     clip-path: 50%;
 }
 
+
+
+/* underline on navlinks */
+.navLinks a:hover{
+        text-decoration: underline;
+    
+}

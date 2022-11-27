@@ -1,0 +1,25 @@
+{
+  "name": "final-project-coffee",
+  "version": "1.0.0",
+  "description": "## Group Members .. ## What it does ...",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-f22/final-project-coffee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-f22/final-project-coffee/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-f22/final-project-coffee#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7"
+  }
+}

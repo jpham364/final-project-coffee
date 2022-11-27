@@ -68,6 +68,7 @@ body{
 }
 
 .drink{
+    font-family: 'Josefin Sans', sans-serif;
     background-color: transparent;
     width: 400px;
     height: 300px;
@@ -77,6 +78,7 @@ body{
     vertical-align: top;
     border-radius: 5px;
     margin: 15px;
+    
 
 }
 

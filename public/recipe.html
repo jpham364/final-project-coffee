@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recipe Maker</title>
+
+    <meta charset="utf-8">
+    <title>Coffee Companion</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">  
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Javascript -->
+
+  </head>
+  <body>
+
+    <header>
+        <div class ="navBar">
+            <a href = "index.html"><img src="logo.png" class = "logo" alt="Logo"></a>   
+                <div class="navLinks">
+                    <a href="espresso.html">Espresso Drinks</a>
+                    <a href="filter.html">Filter Coffee</a>
+                    <a href="recipe.html">Recipe Maker</a>  
+                </div>
+        </div>
+    </header>
+
+    <main class="content">
+      <aside class="sideContainer">
+        <div class="recipeDiv">
+            <p>This is a bean counter</p>
+        </div>
+        <div class="recipeDiv">
+            <p>This is a timer</p>
+        </div>
+
+      </aside>
+      <section class="directions">
+        <div class="selectors">
+            <p>Espresso Drinks</p>
+            <select id="espressoDrinkSelector" class="espressoDrinkSelect" name="espressoDrinkSelect">
+                <option selected value="">Affogato</option>
+                <option>Americano</option>
+                <option>Cappuccino</option>
+                <option>Cortado</option>
+                <option>Espresso</option>
+                <option>Latte</option>
+                <option>Mocha</option>
+                <option>Red Eye</option>
+                <option>Sparkling Americano</option>
+            </select>
+            <p>Filter Coffee</p>
+            <select id="filterSelector" class="filterSelect" name="filterSelect">
+                <option selected value="">Aeropress</option>
+                <option>Chemex</option>
+                <option>Clever Dripper</option>
+                <option>French Press</option>
+                <option>Kalita Wave</option>
+                <option>Moka Pot</option>
+                <option>Orimgami</option>
+                <option>Stagg X</option>
+                <option>V60</option>
+                </select>
+        </div>
+      </section>
+    </main>
+ </body>

@@ -156,3 +156,34 @@ body{
 .affogato-container {
     text-align: left;
 }
+
+
+/* recipe page css */
+.content{
+    display: flex;
+}
+
+.recipeDiv{
+    margin: 10px 2px 50px 2px;
+    border:5px solid rgb(187, 137, 85);
+    border-radius: 10px;
+}
+
+.recipeDiv p {
+    margin: 50px;
+}
+
+.sideContainer{
+    display: inline-block;
+    min-width: 200px;
+}
+
+.directions{
+    display: flex;
+}
+
+.selectors{
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+}

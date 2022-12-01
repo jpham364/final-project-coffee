@@ -44,18 +44,23 @@
         </div>
 
       </aside>
+
+
       <section class="directions">
+              <!-- https://codepen.io/YarivFrd/pen/PEOJLj --> 
           <div class="coffee-buttons">
-              <div>
-                <button class="filter-button">Filter</button>
-              </div>
-              <div>
-                <button class="espresso-button">Espresso</button>
-              </div>
+              <form class="toggle">
+                  <input type="radio" id="choice1" name="choice">
+                  <label for="choice1">Espresso</label>
+      
+                  <input type="radio" id="choice2" name="choice">
+                  <label for="choice2">Filter</label>
+              </form>
           </div>
         <div class="selectors">
+          <div class="hidden">
             <p>Espresso Drinks</p>
-            <select id="espressoDrinkSelector" class="espresso-select" name="espressoDrinkSelect">
+            <select id="espressoDrinkSelector"  name="espressoDrinkSelect">
                 <option selected value="">Affogato</option>
                 <option>Americano</option>
                 <option>Cappuccino</option>
@@ -66,8 +71,10 @@
                 <option>Red Eye</option>
                 <option>Sparkling Americano</option>
             </select>
+          </div>
+          <div class="hidden">
             <p>Filter Coffee</p>
-            <select id="filterSelector" class="filter-select" name="filterSelect">
+            <select id="filterSelector" name="filterSelect" class="hidden">
                 <option selected value="">Aeropress</option>
                 <option>Chemex</option>
                 <option>Clever Dripper</option>
@@ -79,11 +86,12 @@
                 <option>V60</option>
                 </select>
         </div>
+      </div>
         <div class="drink-directions">
             <div class="drink">
               <div class="drink-content">
                   <div class="flip-card-front">
-                      <div class="image-container">
+                      <div class="recipe-image-container">
                           <img src = "espresso/affogato.jpg" alt="cappuccino coffee">
                       </div>
                   </div>
@@ -98,8 +106,7 @@
               </div>
               <div class="ingredients">
                 <h2>Ingredients</h2>
-                <p>1: Ice Cream</p>
-                <p>2: Shots of espresso</p>
+                <p>{{ingredients}}</p>
               </div>
               <div class="steps">
                 <h2>How To:</h2>
@@ -115,13 +122,8 @@
       </section>
     </main>
 
-
-    <div id="modal-backdrop" class="hidden"></div>
-    <div id="bean-counter-modal" class="hidden">
-      <div class="modal-dialog">
-
-        <div id="modal-backdrop" class="hidden"></div>
-        <div id="bean-counter-modal" class="hidden">
+      <div id="modal-backdrop"></div>
+        <div id="bean-counter-modal">
           <div class="modal-dialog">
     
             <div class="modal-header">
@@ -130,15 +132,14 @@
             </div>
     
             <div class="modal-body">
-    
+                <select>
+                  <option>Bean test</option>
+                  <option>Bean test 2</option>
+                </select>
         
             </div>
     
-            </div>
-    
             <div class="modal-footer">
-              <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
-              <button type="button" id="modal-accept" class="action-button">Submit Changes</button>
             </div>
     
           </div>

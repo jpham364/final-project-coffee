@@ -19,16 +19,14 @@
 
     <body>
         <header>
-            
             <div class ="navBar">
-                <a href = "title.html"><img src="logo.png" class = "logo" alt="Logo"></a>          
-               <div class="navLinks">             
-                   <a href="espresso.html">Espresso Drinks</a>
-                   <a href="filter.html">Filter Coffee</a>
-                   <a href="recipe.html">Recipe Maker</a>
-                 </div>
-           </div>
-           
+                <a href = "./title.html"><img src="logo.png" class = "logo" alt="Logo"></a>   
+                    <div class="navLinks">
+                        <a href="espresso.html">Espresso Drinks</a>
+                        <a href="filter.html">Filter Coffee</a>
+                        <a href="recipe.html">Recipe Maker</a>  
+                    </div>
+            </div>
         </header>
 
         <main class = "contents">
@@ -38,7 +36,7 @@
             <!-- <div class = "fadeIn"> -->
 
                 <div class = "fadeIn drink1">
-                    <div class="drink" onclick="drinkClick()">
+                    <div class="drink" onclick="drinkClick('affogato', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -53,7 +51,7 @@
                 </div>
 
                 <div class = "fadeIn drink2">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('americano', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -68,7 +66,7 @@
                 </div>
 
                 <div class = "fadeIn drink3">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('cappuccino', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -83,7 +81,7 @@
                 </div>
 
                 <div class = "fadeIn drink4">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('espresso', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -98,7 +96,7 @@
                 </div>
 
                 <div class = "fadeIn drink5">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('sparkling', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -113,7 +111,7 @@
                 </div>
                         
                 <div class = "fadeIn drink6">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('latte', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -128,7 +126,7 @@
                 </div>
 
                 <div class = "fadeIn drink7">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('mocha', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -143,7 +141,7 @@
                 </div>
 
                 <div class = "fadeIn drink8">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('red-eye', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">
@@ -158,7 +156,7 @@
                 </div>
 
                 <div class = "fadeIn drink9">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick('cortado', 'espresso')">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">

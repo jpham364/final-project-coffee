@@ -1,0 +1,119 @@
+{
+    "espresso": {
+        "Affogato": {
+            "name": "Affogato",
+            "ingredients": "ice cream, shots of espresso",
+            "how-to": "Pull your shots. Scoop out your icecream and then pour your shots over!",
+            "diff": "Adding the icecream steps up your usual shots of espresso"
+        },
+        "Americano": {
+            "name": "Americano",
+            "ingredients": "shots of espresso, water (hot or cold)",
+            "how-to": "Pull your shots. Put your espresso shots in a cup then fill with water",
+            "diff": "Adding water to your shots creates a drip coffee taste and increases drink volume"
+        },
+        "Cappuccino": {
+            "name": "Capuccino",
+            "ingredients": "frothed milk, shots of espresso",
+            "how-to": "Pull your shots. Steam milk until you have a nice foam then scoop the foam into your cup until you have equal parts foam and espresso ",
+            "diff": "Exclusively adding milk foam keeps the drink light and fluffy and adds a nice taste to the shots"
+        },
+        "Cortado": {
+            "name": "Cortado",
+            "ingredients": "steamed milk, shots of espresso",
+            "how-to": "Pull your shots. Steam milk to desired temperature then pour the milk into your cup until you have equal parts milk and espresso ",
+            "diff": "Adding steamed milk adds a creaminess to the shots, and lessens the strong espresso taste"
+        },
+        "Espresso": {
+            "name": "Espresso",
+            "ingredients": "shots of espresso",
+            "how-to": "Pull shots and enjoy",
+            "diff": "This classic approach puts the espresso taste at the forefront"
+        },
+        "Latte": {
+            "name": "Latte",
+            "ingredients": "steamed milk, milk foam, shots of espresso",
+            "how-to": "Pull your shots. Steam your milk until there is a small layer of foam (often described as a wet pain look) and then pour into your cup with your shots. You should have 1/3 espresso 2/3 milk with a layer of foam!",
+            "diff": "This creamy drink incorporates foam and steamed milk so your espresso shots are creamy, light and the taste of the shots is not too strong "
+        },
+        "Mocha": {
+            "name": "Mocha",
+            "ingredients": "steamed milk, milk foam, chocolate syrup, shots of espresso, (optional) cocoa powder",
+            "how-to": "Pull your shots. Steam your milk until there is a small layer of foam (often described as a wet pain look). Add chocolate syrup to the bottom with your espresso shots then pour milk on top. You should have 1/3 espresso 2/3 milk with a layer of foam. Dust with cocoa powder if desired",
+            "diff": "A sweet twist on the classic latte, the mocha turns espresso shots into a dessert"
+        },
+        "RedEye": {
+            "name": "Red Eye",
+            "ingredients": "drip coffee, espresso shots",
+            "how-to": "Pull your shots. Fill the rest of the cup with drip coffee",
+            "diff": "Red Eye refers to overnight flights and this espresso drink maximizes your caffeine intake to get you through them"  
+        },
+        "Sparkling Americano": {
+            "name": "Sparkling Americano",
+            "ingredients": "sparkling water, espresso shots",
+            "how-to": "Pull your shots. Fill the rest of the cup ice and sparkling water",
+            "diff": "A fancy twist to the classic Americano subs out regular water for sparkling and turns the drink into a summery beverage"  
+        }
+
+    },
+
+    "filter": {
+        "Aeropress": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "Chemes": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "Clever Dripper": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "French Press": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "Kalita": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "Moka": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "Origami": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "Stagg": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        },
+        "V60": {
+            "name": "",
+            "ingredients": "",
+            "how-to": "",
+            "diff": ""
+        }
+
+    }
+
+}
+

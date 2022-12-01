@@ -214,7 +214,7 @@ body{
 .directions{
     display: relative;
 }
-
+  
 /* aside css */
 .feature-div{
     margin: 20px;
@@ -274,3 +274,5 @@ body{
     text-decoration: underline;
     align-items: center;
 }
+
+

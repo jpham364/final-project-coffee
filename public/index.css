@@ -1,9 +1,9 @@
+
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(242, 236, 217);
 }
-
 
 
 .logo{
@@ -170,7 +170,6 @@ body{
 @keyframes fade {
     0% { opacity: 0; }
     100% { opacity: 1; }
-
 }
 
 .drink1{
@@ -345,7 +344,7 @@ body{
     font-size: 28px;
   }
   
-  #modal-close {
+#modal-close {
     position: absolute;
     right: 10px;
     top: 5px;
@@ -378,6 +377,7 @@ body{
     cursor: pointer;
 }
 
+
 .toggle input {
     display: none;
 }
@@ -395,3 +395,8 @@ body{
     background-color: rgb(186, 136, 84);
 }
 
+.error{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 300%;
+}

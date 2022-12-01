@@ -227,14 +227,31 @@ body{
 }
 
 /* buttons */ 
+
+.coffee-buttons{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .filter-button{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+} */
+
 .coffee-selector{
     margin: 10px;
     align-items: center;
 }
 
-.espresso-button{
-    float: right;
-}
+/* .espresso-button{
+    position: relative;
+    display: flex;
+
+} */
+
+
 
 .content{
     display: flex;
@@ -248,10 +265,12 @@ body{
     width:100%;
     vertical-align: top;
     display: flex;
+    justify-content: space-evenly;
     border:5px solid rgb(187, 137, 85);
     border-radius: 10px;
     margin: 10px;
 }
+
 
 .espresso-select{
     float: left;

@@ -274,3 +274,8 @@ body{
     text-decoration: underline;
     align-items: center;
 }
+
+/*modal */
+.hidden{
+    display: none;
+}

@@ -1,0 +1,38 @@
+[
+    {
+      "img": "espresso/affogato.jpg",
+      "name": "Affogato"
+    },
+    {
+        "img": "espresso/americano.jpg",
+        "name": "Americano"
+    },
+    {
+        "img": "espresso/cappuccino.jpg",
+        "name": "Cappuccino"
+    },
+    {
+        "img": "espresso/espresso.jpg",
+        "name": "Espresso"
+    },
+    {
+        "img": "espresso/sparkling.jpg",
+        "name": "Sparkling"
+    },
+    {
+        "img": "espresso/latte.jpg",
+        "name": "poor"
+    },
+    {
+        "img": "espresso/mocha.jpg",
+        "name": "Mocha"
+    },
+    {
+        "img":"espresso/red-eye.jpg",
+        "name": "Red Eye"
+    },
+    {
+        "img": "espresso/cortado.jpg",
+        "name": "Cortado"
+    }
+  ]

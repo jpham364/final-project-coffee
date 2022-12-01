@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="index.css">
 
         <!-- Javascript -->
-        <script src="/index.js" charser="utf-8" defer></script>
+        <script type="text/javascript" src="/public/index.js"></script>
 
     </head>
 
@@ -21,7 +21,7 @@
         <header>
             
             <div class ="navBar">
-                <a href = "index.html"><img src="logo.png" class = "logo" alt="Logo"></a>          
+                <a href = "title.html"><img src="logo.png" class = "logo" alt="Logo"></a>          
                <div class="navLinks">             
                    <a href="espresso.html">Espresso Drinks</a>
                    <a href="filter.html">Filter Coffee</a>
@@ -33,14 +33,12 @@
 
         <main class = "contents">
 
-            <a href = "recipe-template.html"><h2> (temp) Link to Recipe Template</h2></a>
-
             <section id ="poDrinks">
 
             <!-- <div class = "fadeIn"> -->
 
                 <div class = "fadeIn drink1">
-                    <div class="drink">
+                    <div class="drink" onclick="drinkClick()">
                         <div class="drink-content">
                             <div class="flip-card-front">
                                 <div class="image-container">

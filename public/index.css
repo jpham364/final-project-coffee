@@ -66,6 +66,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    justify-content: center;
 }
 
 .drink{
@@ -73,7 +75,8 @@ body{
     background-color: transparent;
     width: 400px;
     height: 300px;
-    /* border: 1px solid black; */
+    
+    
     perspective: 1000px;
     display: inline-block;
     vertical-align: top;
@@ -269,6 +272,84 @@ body{
     display: flex;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* For title page */
+
+
+.titleCardContainer{
+    height: 600px;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.titleCardContainer img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    
+}
+
+.introText{
+
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    
+
+    animation-delay: 0.5s; 
+    animation-duration: 1s;
+}
+
+.introText2{
+    
+    position: absolute;
+    top: 425px;
+    left: 150px;
+    width: 350px;
+
+    animation-delay: 1.5s; 
+    animation-duration: 1s;
+}
+
+.introText3{
+    position: absolute;
+    top: 375px;
+    right: 150px;
+    width: 350px;
+
+    animation-delay: 2.5s; 
+    animation-duration: 1s;
+}
+
+.aboutSection{
+    position: relative;
+    left: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 75%;
+}
+
+.aboutTitle{
+    position: absolute;
+    left: 40px;
+}
+
+.aboutText{
+
+    font-size: 20px;
+
+    position: relative;
+    top: 75px;
+    left: 40px;
+}
+
+.end{
+    position: relative;
+    bottom: -125px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(186, 136, 84);
 }
 
 /* drop downs */

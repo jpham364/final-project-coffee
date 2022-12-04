@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="index.css">
 
     <!-- Javascript -->
-    <script type="text/javascript" src="/public/index.js"></script>
+    <script src="index.js" charser="utf-8" defer></script>
 
   </head>
   <body>
 
     <header>
         <div class ="navBar">
-            <a href = "title.html"><img src="logo.png" class = "logo" alt="Logo"></a>   
+            <a href = "/"><img src="logo.png" class = "logo" alt="Logo"></a>   
                 <div class="navLinks">
                     <a href="espresso.html">Espresso Drinks</a>
                     <a href="filter.html">Filter Coffee</a>
@@ -36,11 +36,24 @@
       <aside class="side-container">
         <div class="feature-div">
           <div>
-            <button class="bean-button">This is a bean counter</button>
+            <button id="bean-button">This is a bean counter</button>
           </div>
         </div>
         <div class="feature-div">
-            <p>This is a timer</p>
+          <!-- https://javascript.plainenglish.io/build-a-pomodoro-timer-using-html-css-and-javascript-7a7a8410052c -->
+            <div class="outer-ring" id="outer-ring">
+              <div class="timer">
+                <div id="time">
+                  <div>
+                    <span id="minutes">00</span>
+                    <span id="colon">:</span>
+                    <spawn id="seconds">10</spawn>
+                  </div>
+                  <div id="start">START</div>
+                  <span id="setting"></span>
+                </div>
+              </div>
+            </div>
         </div>
 
       </aside>
@@ -49,18 +62,16 @@
       <section class="directions">
               <!-- https://codepen.io/YarivFrd/pen/PEOJLj --> 
           <div class="coffee-buttons">
-              <form class="toggle">
-                  <input type="radio" id="choice1" name="choice">
-                  <label for="choice1">Espresso</label>
+              <div class="toggle">
+                  <button class="" id="espresso">Espresso</button>
       
-                  <input type="radio" id="choice2" name="choice">
-                  <label for="choice2">Filter</label>
-              </form>
+                  <button class="" id="filter">Filter</button>
+              </div>
           </div>
         <div class="selectors">
-          <div class="hidden">
+          <div id="espressoSelector" class="hidden">
             <p>Espresso Drinks</p>
-            <select id="espressoDrinkSelector"  name="espressoDrinkSelect">
+            <select  name="espressoDrinkSelect">
                 <option selected value="">Affogato</option>
                 <option>Americano</option>
                 <option>Cappuccino</option>
@@ -72,9 +83,9 @@
                 <option>Sparkling Americano</option>
             </select>
           </div>
-          <div class="hidden">
+          <div id="filterSelector" class="hidden">
             <p>Filter Coffee</p>
-            <select id="filterSelector" name="filterSelect" class="hidden">
+            <select name="filterSelect">
                 <option selected value="">Aeropress</option>
                 <option>Chemex</option>
                 <option>Clever Dripper</option>
@@ -120,28 +131,28 @@
           </div>
         </div>
       </section>
-    </main>
+  </main>
 
-      <div id="modal-backdrop"></div>
-        <div id="bean-counter-modal">
-          <div class="modal-dialog">
+  <div id="modal-backdrop" class="hidden"></div>
+    <div id="bean-counter-modal" class="hidden">
+      <div class="modal-dialog">
     
-            <div class="modal-header">
+          <div class="modal-header">
               <h3>Bean Counter</h3>
               <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
-            </div>
-    
-            <div class="modal-body">
-                <select>
-                  <option>Bean test</option>
-                  <option>Bean test 2</option>
-                </select>
-        
-            </div>
-    
-            <div class="modal-footer">
-            </div>
-    
           </div>
-        </div>
+    
+      <div class="modal-body">
+           <select>
+              <option>Bean test</option>
+             <option>Bean test 2</option>
+           </select>
+        
+       </div>
+    
+      <div class="modal-footer">
+      </div>
+    
+      </div>
+   </div>
  </body>

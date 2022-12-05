@@ -1,158 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Recipe Maker</title>
-
-    <meta charset="utf-8">
-    <title>Coffee Companion</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">  
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
-
-    <!-- Javascript -->
-    <script src="index.js" charser="utf-8" defer></script>
-
-  </head>
-  <body>
-
-    <header>
-        <div class ="navBar">
-            <a href = "/"><img src="logo.png" class = "logo" alt="Logo"></a>   
-                <div class="navLinks">
-                    <a href="espresso.html">Espresso Drinks</a>
-                    <a href="filter.html">Filter Coffee</a>
-                    <a href="recipe.html">Recipe Maker</a>  
-                </div>
-        </div>
-    </header>
-
-    <main class="content">
-      <aside class="side-container">
-        <div class="feature-div">
-          <div>
-            <button id="bean-button">This is a bean counter</button>
-          </div>
-        </div>
-        <div class="feature-div">
-          <!-- https://javascript.plainenglish.io/build-a-pomodoro-timer-using-html-css-and-javascript-7a7a8410052c -->
-            <div class="outer-ring" id="outer-ring">
-              <div class="timer">
-                <div id="time">
-                  <div>
-                    <span id="minutes">00</span>
-                    <span id="colon">:</span>
-                    <spawn id="seconds">10</spawn>
-                  </div>
-                  <div id="start">START</div>
-                  <span id="setting"></span>
-                </div>
-              </div>
-            </div>
-        </div>
-
-      </aside>
-
-
-      <section class="directions">
-              <!-- https://codepen.io/YarivFrd/pen/PEOJLj --> 
-          <div class="coffee-buttons">
-              <div class="toggle">
-                  <button class="" id="espresso">Espresso</button>
-      
-                  <button class="" id="filter">Filter</button>
-              </div>
-          </div>
-        <div class="selectors">
-          <div id="espressoSelector" class="hidden">
-            <p>Espresso Drinks</p>
-            <select  name="espressoDrinkSelect">
-                <option selected value="">Affogato</option>
-                <option>Americano</option>
-                <option>Cappuccino</option>
-                <option>Cortado</option>
-                <option>Espresso</option>
-                <option>Latte</option>
-                <option>Mocha</option>
-                <option>Red Eye</option>
-                <option>Sparkling Americano</option>
-            </select>
-          </div>
-          <div id="filterSelector" class="hidden">
-            <p>Filter Coffee</p>
-            <select name="filterSelect">
-                <option selected value="">Aeropress</option>
-                <option>Chemex</option>
-                <option>Clever Dripper</option>
-                <option>French Press</option>
-                <option>Kalita Wave</option>
-                <option>Moka Pot</option>
-                <option>Orimgami</option>
-                <option>Stagg X</option>
-                <option>V60</option>
-                </select>
-        </div>
-      </div>
-        <div class="drink-directions">
-            <div class="drink">
-              <div class="drink-content">
-                  <div class="flip-card-front">
-                      <div class="recipe-image-container">
-                          <img src = "espresso/affogato.jpg" alt="cappuccino coffee">
-                      </div>
-                  </div>
-                  <div class="flip-card-back">
-                      <a href="#"> <h1> Affogato </h1> </a>
-                  </div>
-              </div>    
-          </div>
-          <div class="recipe-container">
-              <div class="drink-name">
-                <h1>Affogato</h1>
-              </div>
-              <div class="ingredients">
-                <h2>Ingredients</h2>
-                <p>{{ingredients}}</p>
-              </div>
-              <div class="steps">
-                <h2>How To:</h2>
-                <p>Scoop out your icecream and then pour your shots over!</p>
-              </div>
-              <div class="drink-diff">
-                  <h2>What makes this drink different?</h2>
-                  <p>Adding the icecream steps up your usual shots of espresso</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  </main>
-
-  <div id="modal-backdrop" class="hidden"></div>
-    <div id="bean-counter-modal" class="hidden">
-      <div class="modal-dialog">
-    
-          <div class="modal-header">
-              <h3>Bean Counter</h3>
-              <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
-          </div>
-    
-      <div class="modal-body">
-           <select>
-              <option>Bean test</option>
-             <option>Bean test 2</option>
-           </select>
-        
+ <head>
+   <meta charset="utf-8">
+   <title>Recipe Maker</title>
+ 
+   <meta charset="utf-8">
+   <title>Coffee Companion</title>
+ 
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+ 
+   <!-- CSS -->
+   <link rel="stylesheet" href="index.css">
+ 
+   <!-- Javascript -->
+   <script src="index.js" charser="utf-8" defer></script>
+ 
+ </head>
+ <body>
+ 
+   <header>
+       <div class ="navBar">
+           <a href = "/"><img src="logo.png" class = "logo" alt="Logo"></a>  
+               <div class="navLinks">
+                   <a href="espresso.html">Espresso Drinks</a>
+                   <a href="filter.html">Filter Coffee</a>
+                   <a href="recipe.html">Recipe Maker</a> 
+               </div>
        </div>
+   </header>
+ 
+   <main class="content">
+     <aside class="side-container">
+       <div class="feature-div">
+         <div>
+           <button id="bean-button">This is a bean counter</button>
+         </div>
+       </div>
+       <div class="feature-div">
+         <!-- https://javascript.plainenglish.io/build-a-pomodoro-timer-using-html-css-and-javascript-7a7a8410052c -->
+           <div class="outer-ring" id="outer-ring">
+             <div class="timer">
+               <div id="time">
+                 <div>
+                   <span id="minutes">00</span>
+                   <span id="colon">:</span>
+                   <spawn id="seconds">10</spawn>
+                 </div>
+                 <div id="start">START</div>
+                 <span id="setting"></span>
+               </div>
+             </div>
+           </div>
+       </div>
+ 
+     </aside>
+ 
+ 
+     <section class="directions">
+             <!-- https://codepen.io/YarivFrd/pen/PEOJLj -->
+         <div class="coffee-buttons">
+             <div class="toggle">
+                 <button class="" id="espresso">Espresso</button>
     
-      <div class="modal-footer">
+                 <button class="" id="filter">Filter</button>
+             </div>
+         </div>
+       <div class="selectors">
+         <div id="espressoSelector" class="hidden">
+           <p>Espresso Drinks</p>
+           <select  name="espressoDrinkSelect">
+               <option selected value="">Affogato</option>
+               <option>Americano</option>
+               <option>Cappuccino</option>
+               <option>Cortado</option>
+               <option>Espresso</option>
+               <option>Latte</option>
+               <option>Mocha</option>
+               <option>Red Eye</option>
+               <option>Sparkling Americano</option>
+           </select>
+         </div>
+         <div id="filterSelector" class="hidden">
+           <p>Filter Coffee</p>
+           <select name="filterSelect">
+               <option selected value="">Aeropress</option>
+               <option>Chemex</option>
+               <option>Clever Dripper</option>
+               <option>French Press</option>
+               <option>Kalita Wave</option>
+               <option>Moka Pot</option>
+               <option>Orimgami</option>
+               <option>Stagg X</option>
+               <option>V60</option>
+               </select>
+       </div>
+     </div>
+       <div class="drink-directions">
+           <div class="drink">
+             <div class="drink-content">
+                 <div class="flip-card-front">
+                     <div class="recipe-image-container">
+                         <img src = "espresso/affogato.jpg" alt="cappuccino coffee">
+                     </div>
+                 </div>
+                 <div class="flip-card-back">
+                     <a href="#"> <h1> Affogato </h1> </a>
+                 </div>
+             </div>   
+         </div>
+         <div class="recipe-container">
+             <div class="drink-name">
+               <h1>Affogato</h1>
+             </div>
+             <div class="ingredients">
+               <h2>Ingredients</h2>
+               <p>{{ingredients}}</p>
+             </div>
+             <div class="steps">
+               <h2>How To:</h2>
+               <p>Scoop out your icecream and then pour your shots over!</p>
+             </div>
+             <div class="drink-diff">
+                 <h2>What makes this drink different?</h2>
+                 <p>Adding the icecream steps up your usual shots of espresso</p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+ </main>
+ 
+ <div id="modal-backdrop" class="hidden"></div>
+   <div id="bean-counter-modal" class="hidden">
+     <div class="modal-dialog">
+  
+         <div class="modal-header">
+             <h3>Bean Counter</h3>
+             <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+         </div>
+  
+     <div class="modal-body">
+          <select>
+             <option>Bean test</option>
+            <option>Bean test 2</option>
+          </select>
+      
       </div>
-    
-      </div>
-   </div>
- </body>
+  
+     <div class="modal-footer">
+     </div>
+  
+     </div>
+  </div>
+</body>

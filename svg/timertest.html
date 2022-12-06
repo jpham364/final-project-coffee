@@ -1,15 +1,14 @@
-<head>
-    <link rel="stylesheet" href="timertest.css">
-    <link type="text/javascript" src="timertest.js"></script>
-    </script>
-  </head>
-<div class="clock-wrap">
-	<div class="clock pro-0">
-		<span class="count">0</span>
-	</div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="timertest.css">
+<div class="timer">
+    <span class="timer__part timer__part--minutes">00</span>
+    <span class="timer__part">:</span>
+    <span class="timer__part timer__part--seconds">00</span>
+    <button type="button" class="timer__btn timer__btn--control timer__btn--start">
+        <span class="material-icons">play_arrow</span>
+    </button>
+    <button type="button" class="timer__btn timer__btn--reset">
+        <span class="material-icons">timer</span>
+    </button>
 </div>
-<div class="action">
-	<div class="input">
-		<input class="input-num" type="number" min="1" placeholder="Enter Minute"><input data-action="start" class="input-btn" type="button" value="Start">
-	</div>
-</div>
+<script src="timertest.js" type="module"></script>

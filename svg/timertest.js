@@ -1,75 +1,94 @@
-$step = 1;
-$loops = Math.round(100 / $step);
-$increment = 360 / $loops;
-$half = Math.round($loops / 2);
-$barColor = '#ec366b';
-$backColor = '#feeff4';
-
-$(function(){
-	clock.init();
-});
-clock={
-	interval:null,
-	init:function(){
-		$('.input-btn').click(function(){
-			switch($(this).data('action')){
-				case'start':
-					clock.stop();
-					clock.start($('.input-num').val());
-				break;
-				case'stop':
-					clock.stop();
-				break;
-			}
-		});
-	},
-	start:function(t){
-		var pie = 0;
-		var num = 0;
-		var min = t?t:1;
-		var sec = min*60;
-		var lop = sec;
-		$('.count').text(min);
-		if(min>0){
-			$('.count').addClass('min')
-		}else{
-			$('.count').addClass('sec')
-		}
-		clock.interval = setInterval(function(){
-			sec = sec-1;
-			if(min>1){
-				pie = pie+(100/(lop/min));
-			}else{
-				pie = pie+(100/(lop));
-			}
-			if(pie>=101){ pie = 1; }
-			num = (sec/60).toFixed(2).slice(0,-3);
-			if(num==0){
-				$('.count').removeClass('min').addClass('sec').text(sec);
-			}else{
-				$('.count').removeClass('sec').addClass('min').text(num);
-			}
-			//$('.clock').attr('class','clock pro-'+pie.toFixed(2).slice(0,-3));
-			//console.log(pie+'__'+sec);
-			$i = (pie.toFixed(2).slice(0,-3))-1;
-			if($i < $half){
-				$nextdeg = (90 + ( $increment * $i ))+'deg';
-				$('.clock').css({'background-image':'linear-gradient(90deg,'+$backColor+' 50%,transparent 50%,transparent),linear-gradient('+$nextdeg+','+$barColor+' 50%,'+$backColor+' 50%,'+$backColor+')'});
-			}else{
-				$nextdeg = (-90 + ( $increment * ( $i - $half ) ))+'deg';
-				$('.clock').css({'background-image':'linear-gradient('+$nextdeg+','+$barColor+' 50%,transparent 50%,transparent),linear-gradient(270deg,'+$barColor+' 50%,'+$backColor+' 50%,'+$backColor+')'});
-			}
-			if(sec==0){
-				clearInterval(clock.interval);
-				$('.count').text(0);
-				//$('.clock').removeAttr('class','clock pro-100');
-				$('.clock').removeAttr('style');
-			}
-		},1000);
-	},
-	stop:function(){
-		clearInterval(clock.interval);
-		$('.count').text(0);
-		$('.clock').removeAttr('style');
-	}
-}
+class Timer {
+    constructor(root) {
+      root.innerHTML = Timer.getHTML();
+  
+      this.el = {
+        minutes: root.querySelector(".timer__part--minutes"),
+        seconds: root.querySelector(".timer__part--seconds"),
+        control: root.querySelector(".timer__btn--control"),
+        reset: root.querySelector(".timer__btn--reset")
+      };
+  
+      this.interval = null;
+      this.remainingSeconds = 0;
+  
+      this.el.control.addEventListener("click", () => {
+        if (this.interval === null) {
+          this.start();
+        } else {
+          this.stop();
+        }
+      });
+  
+      this.el.reset.addEventListener("click", () => {
+        const inputMinutes = prompt("Enter number of minutes:");
+  
+        if (inputMinutes < 60) {
+          this.stop();
+          this.remainingSeconds = inputMinutes * 60;
+          this.updateInterfaceTime();
+        }
+      });
+    }
+  
+    updateInterfaceTime() {
+      const minutes = Math.floor(this.remainingSeconds / 60);
+      const seconds = this.remainingSeconds % 60;
+  
+      this.el.minutes.textContent = minutes.toString().padStart(2, "0");
+      this.el.seconds.textContent = seconds.toString().padStart(2, "0");
+    }
+  
+    updateInterfaceControls() {
+      if (this.interval === null) {
+        this.el.control.innerHTML = `<span class="material-icons">play_arrow</span>`;
+        this.el.control.classList.add("timer__btn--start");
+        this.el.control.classList.remove("timer__btn--stop");
+      } else {
+        this.el.control.innerHTML = `<span class="material-icons">pause</span>`;
+        this.el.control.classList.add("timer__btn--stop");
+        this.el.control.classList.remove("timer__btn--start");
+      }
+    }
+  
+    start() {
+      if (this.remainingSeconds === 0) return;
+  
+      this.interval = setInterval(() => {
+        this.remainingSeconds--;
+        this.updateInterfaceTime();
+  
+        if (this.remainingSeconds === 0) {
+          this.stop();
+        }
+      }, 1000);
+  
+      this.updateInterfaceControls();
+    }
+  
+    stop() {
+      clearInterval(this.interval);
+  
+      this.interval = null;
+  
+      this.updateInterfaceControls();
+    }
+  
+    static getHTML() {
+      return `
+              <span class="timer__part timer__part--minutes">00</span>
+              <span class="timer__part">:</span>
+              <span class="timer__part timer__part--seconds">00</span>
+              <button type="button" class="timer__btn timer__btn--control timer__btn--start">
+                  <span class="material-icons">play_arrow</span>
+              </button>
+              <button type="button" class="timer__btn timer__btn--reset">
+                  <span class="material-icons">timer</span>
+              </button>
+          `;
+    }
+  }
+  
+  new Timer(
+      document.querySelector(".timer")
+  );

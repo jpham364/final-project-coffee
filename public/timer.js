@@ -49,31 +49,31 @@ export default class Timer {
             this.el.control.innerHTML = `<span class="material-icons">pause</span>`;
             this.el.control.classList.add("timer__btn--stop");
             this.el.control.classList.remove("timer__btn--start");
-          }
         }
+    }
       
     start() {
-          if (this.remainingSeconds === 0) return;
+        if (this.remainingSeconds === 0) return;
       
-          this.interval = setInterval(() => {
+        this.interval = setInterval(() => {
             this.remainingSeconds--;
             this.updateInterfaceTime();
       
             if (this.remainingSeconds === 0) {
-              this.stop();
+                this.stop();
             }
-          }, 1000);
+        }, 1000);
       
-          this.updateInterfaceControls();
-        }
+        this.updateInterfaceControls();
+    }
       
-        stop() {
-          clearInterval(this.interval);
+    stop() {
+        clearInterval(this.interval);
       
-          this.interval = null;
+        this.interval = null;
       
-          this.updateInterfaceControls();
-        }
+        this.updateInterfaceControls();
+    }
 
     static getHTML() {
         return `

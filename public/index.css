@@ -231,32 +231,13 @@ body{
 }
 
 .side-container div{
-    min-width: 300px;
-    min-height: 100px;
+    /* min-width: 300px;
+    min-height: 100px; */
     border-radius: 10px;
 }
 
 /* buttons */ 
 
-
-
-#bean-button{
-
-    font-size: 100%;
-    background-color: rgb(187, 137, 85);
-    border-radius: 10px;
-    min-width: 100%;
-    max-height: 50px;
-    cursor: pointer;
-    
-}
-
-
-.coffee-buttons{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-}
 
 /* .filter-button{
     position: relative;
@@ -529,11 +510,7 @@ body{
     background-color: rgb(237,210,181);
  }
 
- .bean-section{
-    width: 300px;
-    height: 350px;
-    border: rgb(188, 135, 70) solid 1px;
-}
+ 
 
 #outer-ring {
     width: 300px;
@@ -546,7 +523,6 @@ body{
 
 /* timer */
 
-  
 .timer {
     font-family: sans-serif;
     max-width: 100%;
@@ -578,4 +554,60 @@ body{
   .timer__btn--stop {
     background: #ff0224;
   }
-  
+
+/* Beans */
+.bean-section{
+    width: 300px;
+    height: 250px;
+    border: rgb(188, 135, 70) solid 1px;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#bean-button{
+
+    font-size: 100%;
+    background-color: rgb(187, 137, 85);
+    min-width: 100%;
+    height: 40px;
+
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+
+.coffee-buttons{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* vertical menu */
+
+
+
+.beanEntry {
+    background-color: rgb(112, 80, 29); /* Grey background color */
+    color: white; /* Black text color */
+    display: block; /* making the links on top */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+
+    height: 20px;
+
+    margin-bottom: 5px;
+    border-radius: 8px;
+    margin-left: 0px;
+
+    cursor: pointer;
+    
+}
+
+.vertical-menu a:hover {
+    background-color: rgb(94, 88, 62); /* Dark grey background on mouse-over */
+}
+

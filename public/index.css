@@ -531,7 +531,44 @@ body{
 #outer-ring {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
     background-color: rgb(187, 137, 85);
-    border-color: none;
+    border-color: black;
+    align-items: center;
+    justify-content: center;
   }
+
+/* timer */
+
+  
+.timer {
+    font-family: sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    background-color: rgb(187, 137, 85);
+  }
+  
+  .timer__part {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .timer__btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: #8208e6;
+    cursor: pointer;
+  }
+  
+  .timer__btn--start {
+    background: #00b84c;
+  }
+  
+  .timer__btn--stop {
+    background: #ff0224;
+  }
+  

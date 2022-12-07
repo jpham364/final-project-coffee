@@ -510,23 +510,21 @@ body{
 #outer-ring {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
     background-color: rgb(187, 137, 85);
-    border-color: none;
+    border-color: black;
+    align-items: center;
+    justify-content: center;
   }
 
 /* timer */
-body {
-    background: #dddddd;
-    margin: 24px;
-  }
+
   
-  .timer {
+.timer {
     font-family: sans-serif;
-    display: inline-block;
-    padding: 24px 32px;
-    border-radius: 30px;
-    background: white;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    background-color: rgb(187, 137, 85);
   }
   
   .timer__part {
@@ -550,6 +548,6 @@ body {
   }
   
   .timer__btn--stop {
-    background: #ff0256;
+    background: #ff0224;
   }
   

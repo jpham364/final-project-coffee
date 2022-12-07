@@ -33,5 +33,8 @@ filterbutton.addEventListener("click", function(){
     document.getElementById("espressoSelector").classList.add("hidden")
 })
 
+import Timer from "/timer.js";
 
-
+new Timer (
+    document.querySelector(".timer")
+);

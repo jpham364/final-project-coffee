@@ -1,125 +1,124 @@
 {
     "espresso": {
-        "Affogato": {
+        "affogato": {
             "name": "Affogato",
             "img": "espresso/affogato.jpg",
             "ingredients": "ice cream, shots of espresso",
-            "how-to": "Pull your shots. Scoop out your icecream and then pour your shots over!",
+            "howto": "Pull your shots. Scoop out your icecream and then pour your shots over!",
             "diff": "Adding the icecream steps up your usual shots of espresso"
         },
-        "Americano": {
+        "americano": {
             "name": "Americano",
             "img": "espresso/americano.jpg",
             "ingredients": "shots of espresso, water (hot or cold)",
-            "how-to": "Pull your shots. Put your espresso shots in a cup then fill with water",
+            "howto": "Pull your shots. Put your espresso shots in a cup then fill with water",
             "diff": "Adding water to your shots creates a drip coffee taste and increases drink volume"
         },
-        "Cappuccino": {
+        "cappuccino": {
             "name": "Capuccino",
             "img": "espresso/cappuccino.jpg",
             "ingredients": "frothed milk, shots of espresso",
-            "how-to": "Pull your shots. Steam milk until you have a nice foam then scoop the foam into your cup until you have equal parts foam and espresso ",
+            "howto": "Pull your shots. Steam milk until you have a nice foam then scoop the foam into your cup until you have equal parts foam and espresso ",
             "diff": "Exclusively adding milk foam keeps the drink light and fluffy and adds a nice taste to the shots"
         },
-        "Cortado": {
+        "cortado": {
             "name": "Cortado",
             "img": "espresso/cortado.jpg",
             "ingredients": "steamed milk, shots of espresso",
-            "how-to": "Pull your shots. Steam milk to desired temperature then pour the milk into your cup until you have equal parts milk and espresso ",
+            "howto": "Pull your shots. Steam milk to desired temperature then pour the milk into your cup until you have equal parts milk and espresso ",
             "diff": "Adding steamed milk adds a creaminess to the shots, and lessens the strong espresso taste"
         },
-        "Espresso": {
+        "espresso": {
             "name": "Espresso",
             "img": "espresso/espresso.jpg",
             "ingredients": "shots of espresso",
-            "how-to": "Pull shots and enjoy",
+            "howto": "Pull shots and enjoy",
             "diff": "This classic approach puts the espresso taste at the forefront"
         },
         "Latte": {
             "name": "Latte",
             "img": "espresso/latte.jpg",
             "ingredients": "steamed milk, milk foam, shots of espresso",
-            "how-to": "Pull your shots. Steam your milk until there is a small layer of foam (often described as a wet pain look) and then pour into your cup with your shots. You should have 1/3 espresso 2/3 milk with a layer of foam!",
+            "howto": "Pull your shots. Steam your milk until there is a small layer of foam (often described as a wet pain look) and then pour into your cup with your shots. You should have 1/3 espresso 2/3 milk with a layer of foam!",
             "diff": "This creamy drink incorporates foam and steamed milk so your espresso shots are creamy, light and the taste of the shots is not too strong "
         },
-        "Mocha": {
+        "mocha": {
             "name": "Mocha",
             "img": "espresso/mocha.jpg",
             "ingredients": "steamed milk, milk foam, chocolate syrup, shots of espresso, (optional) cocoa powder",
-            "how-to": "Pull your shots. Steam your milk until there is a small layer of foam (often described as a wet pain look). Add chocolate syrup to the bottom with your espresso shots then pour milk on top. You should have 1/3 espresso 2/3 milk with a layer of foam. Dust with cocoa powder if desired",
+            "howto": "Pull your shots. Steam your milk until there is a small layer of foam (often described as a wet pain look). Add chocolate syrup to the bottom with your espresso shots then pour milk on top. You should have 1/3 espresso 2/3 milk with a layer of foam. Dust with cocoa powder if desired",
             "diff": "A sweet twist on the classic latte, the mocha turns espresso shots into a dessert"
         },
-        "RedEye": {
+        "redeye": {
             "name": "Red Eye",
             "img": "espresso/red-eye.jpg",
             "ingredients": "drip coffee, espresso shots",
-            "how-to": "Pull your shots. Fill the rest of the cup with drip coffee",
+            "howto": "Pull your shots. Fill the rest of the cup with drip coffee",
             "diff": "Red Eye refers to overnight flights and this espresso drink maximizes your caffeine intake to get you through them"  
         },
-        "Sparkling Americano": {
+        "sparklingamericano": {
             "name": "Sparkling Americano",
             "img": "espresso/sparkling.jpg",
             "ingredients": "sparkling water, espresso shots",
-            "how-to": "Pull your shots. Fill the rest of the cup ice and sparkling water",
+            "howto": "Pull your shots. Fill the rest of the cup ice and sparkling water",
             "diff": "A fancy twist to the classic Americano subs out regular water for sparkling and turns the drink into a summery beverage"  
         }
 
     },
 
     "filter": {
-        "Aeropress": {
+        "aeropress": {
             "name": "Aeropress",
             "ingredients": "Coffee: 11g at medium-fine grind / Water: 210F, 200g / Aeropress Filter",
-            "how-to": "Set brewer on server. Start timer and add 200g of water into chamber. Immediately place plunger on top of brewer. Wait 2 minutes. Holding the brewer, gently swirl brewer. Wait another 30 seconds. Press down on plunger all the way.",
+            "howto": "Set brewer on server. Start timer and add 200g of water into chamber. Immediately place plunger on top of brewer. Wait 2 minutes. Holding the brewer, gently swirl brewer. Wait another 30 seconds. Press down on plunger all the way.",
             "diff": "Uses a unique plunger design that uses pressure to create strong coffee, also a very travel friendly brewer!"
         },
-        "Chemex": {
+        "chemex": {
             "name": "Chemex",
             "ingredients": "Coffee: 50g at medium-coarse grind / Water: 205F, 700g / Chemex Filter",
-            
-            "how-to": "Prepare filter in brewer by prewettting it using water. Flatten the bed of coffee in the filter. There will be 4 total pours. The first pour of 100g will bloom the coffee and wait 45-55 seconds. Allow water to drain through grounds before pouring in 200g increments.",
+            "howto": "Prepare filter in brewer by prewettting it using water. Flatten the bed of coffee in the filter. There will be 4 total pours. The first pour of 100g will bloom the coffee and wait 45-55 seconds. Allow water to drain through grounds before pouring in 200g increments.",
             "diff": "Has a timeless glass design and the filters for it help make a clean cup of coffee. "
         },
-        "Clever Dripper": {
+        "cleverdripper": {
             "name": "Clever Dripper",
             "ingredients":"Coffee: 20g at medium-coarse grind / Water: 205F, 320g / Melitta #4 Filter ",
-            "how-to": "Pour all 320g of coffee and start timer for 3 minutes. Let the coffee sit until 2 minutes to stir. Then drain brewer. ",
+            "howto": "Pour all 320g of coffee and start timer for 3 minutes. Let the coffee sit until 2 minutes to stir. Then drain brewer. ",
             "diff": "Has a mechanism where you can let the coffee grinds sit. The only thing need you need to do is put it on top of a mug and it will drain!"
         },
-        "French Press": {
+        "frenchpress": {
             "name": "French press",
             "ingredients": "Coffee: 30g at coarse grind / Water: 205F, 350g",
-            "how-to": "Add 60 grams of water. Allow bloom for 30 seconds. Let coffee steep for four minutes. Then plunge.",
+            "howto": "Add 60 grams of water. Allow bloom for 30 seconds. Let coffee steep for four minutes. Then plunge.",
             "diff": "Creates a dense and full bodied cup of coffee. With the design it is easy to create large batches for it"
         },
-        "Kalita": {
+        "kalita": {
             "name": "Kalita",
             "ingredients": "Coffee: 21g at fine grind / Water: 212F, 375g",
-            "how-to": "Saturate grounds with 60g of water for 10 seconds. After 45 seconds, pour water up to 200g. Pour water periodically in 50g amounts to target water at around 3:00.",
+            "howto": "Saturate grounds with 60g of water for 10 seconds. After 45 seconds, pour water up to 200g. Pour water periodically in 50g amounts to target water at around 3:00.",
             "diff": "Is made out of stainless steel and uses a flat bottom to ensure even extraction!"
         },
-        "Moka": {
+        "moka": {
             "name": "Moka",
             "ingredients": "Coffee: 16g at very fine grind / Water: preheated and fill to max-fill edge of brewer ",
-            "how-to": "Fill water on the bottom chamber of the brewer and place filter basket on top. Place coffee on top of filter and leave brewer open. Turn on stove and heat until liquid is coming out. Once there are bubbles, immediately take off heat.  ",
+            "howto": "Fill water on the bottom chamber of the brewer and place filter basket on top. Place coffee on top of filter and leave brewer open. Turn on stove and heat until liquid is coming out. Once there are bubbles, immediately take off heat.  ",
             "diff": "The closest to espresso-like coffee without making an espresso machine. Creates a very strong cup of coffee."
         },
-        "Origami": {
+        "origami": {
             "name": "Origami",
             "ingredients": "Coffee: 20g at medium-fine grind / Water: 300g, 203F / Kalita Filters",
-            "how-to": "Pour initial 50ml to bloom coffee. After 40 seconds, slowly pour 200 ml of water.",
+            "howto": "Pour initial 50ml to bloom coffee. After 40 seconds, slowly pour 200 ml of water.",
             "diff": "Elegant design and can use a variety of filters. "
         },
-        "Stagg": {
-            "name": "Stagg",
+        "stagg": {
+            "name": "Stagg X",
             "ingredients": "Coffee: 22g at medium-fine grind / Water: 350g, 205F / Stagg Filters",
-            "how-to": "Pour initial 100ml to bloom coffee. After 30 seconds, slowly pour to the top of the filter and let it drain before filling it again. Repeat until target weight.",
+            "howto": "Pour initial 100ml to bloom coffee. After 30 seconds, slowly pour to the top of the filter and let it drain before filling it again. Repeat until target weight.",
             "diff": "Uses a unique double-walled design to retain heat after brew. "
         },
-        "V60": {
+        "v60": {
             "name": "V60",
             "ingredients": "Coffee: 15g at medium-fine grind / Water: 250g, 205F / V60 filter",
-            "how-to": "Bloom with 50g of water. Pour in 50g increments every 10 seconds until target weight.",
+            "howto": "Bloom with 50g of water. Pour in 50g increments every 10 seconds until target weight.",
             "diff": "Uses a plastic dripper, which makes it a portale way to make pour-overs "
         }
 

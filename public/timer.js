@@ -93,3 +93,4 @@ export default class Timer {
 new Timer(
     document.querySelector(".timer")
 );
+/* https://youtu.be/PIiMSMz7KzM */

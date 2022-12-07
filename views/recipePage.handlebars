@@ -10,13 +10,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
 
     <!-- Javascript -->
-    <script src="index.js" charser="utf-8" defer></script>
+    <script type="module" src="index.js" charser="utf-8" defer></script>
 
   </head>
   <body>
@@ -42,16 +43,7 @@
         <div class="feature-div">
           <!-- https://javascript.plainenglish.io/build-a-pomodoro-timer-using-html-css-and-javascript-7a7a8410052c -->
             <div class="outer-ring" id="outer-ring">
-              <div class="timer">
-                <span class="timer__part timer__part--minutes">00</span>
-                <span class="timer__part">:</span>
-                <span class="timer__part timer__part--seconds">00</span>
-                <button type="button" class="timer__btn timer__btn--control timer__btn--start">
-                    <span class="material-icons">play_arrow</span>
-                </button>
-                <button type="button" class="timer__btn timer__btn--reset">
-                    <span class="material-icons">timer</span>
-                </button>
+              <div class="timer"></div>
             </div>
         </div>
 

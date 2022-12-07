@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="index.css">
 
         <!-- Javascript -->
+        <script src="index.js" charser="utf-8" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     </head>
 
@@ -20,7 +22,7 @@
         <header>
             
             <div class ="navBar">
-                <a href = "index.html"><img src="logo.png" class = "logo" alt="Logo"></a>          
+                <a href = "/"><img src="logo.png" class = "logo" alt="Logo"></a>          
                <div class="navLinks">             
                    <a href="espresso.html">Espresso Drinks</a>
                    <a href="filter.html">Filter Coffee</a>
@@ -32,152 +34,23 @@
 
         <main class = "contents">
 
-            <a href = "recipe-template.html"><h2> (temp) Link to Recipe Template</h2></a>
+            <div class = "titleCardContainer">
 
-            <section id ="poDrinks">
+                <h1 class = "introText fadeIn">hello.</h1>
+                <h1 class = "introText2 fadeIn">welcome to your new best friend.</h1>
+                <h1 class = "introText3 fadeIn">from filter coffee to espresso, we have your back.</h1>
+                <img src = "titlecard.jpg" alt="title card">   
+            </div> 
 
-            <!-- <div class = "fadeIn"> -->
+            <div class = "aboutSection">
+                <h1 class = "aboutTitle">about:</h1>
+                <p class = "aboutText"> Coffee comes in many different shapes and sizes, and Coffee Companion is a way to simplify searching the internet for various drinks.  <br><br> In filter coffee, the result is always a great cup, but each brewer has a different method make coffee which has many factors to consider. The ratio of coffee and water, grind size, and brew-time are all factors that are required for optimal brewing. <br><br> This website includes details on how to make your drinks as well as a timer to help time your brew so you can use this alongside making your coffee!   </p>
+            </div>
 
-                <div class = "fadeIn drink1">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/affogato.jpg" alt="affogato coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"><h1> Affogato </h1></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "fadeIn drink2">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/americano.jpg" alt="americano coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"><h1> Americano </h1></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "fadeIn drink3">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/cappuccino.jpg" alt="cappuccino coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"> <h1> Cappuccino </h1></a>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-
-                <div class = "fadeIn drink4">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/espresso.jpg" alt="espresso coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"><h1> Espresso </h1></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "fadeIn drink5">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/sparkling.jpg" alt="iced-coffee coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"> <h1> Sparkling Americano </h1></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        
-                <div class = "fadeIn drink6">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/latte.jpg" alt="latte coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"> <h1> Latte </h1></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "fadeIn drink7">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/mocha.jpg" alt="mocha coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"> <h1> Mocha </h1></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "fadeIn drink8">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/red-eye.jpg" alt="red-eye coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href ="recipe.html"> <h1> Red Eye </h1> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "fadeIn drink9">
-                    <div class="drink">
-                        <div class="drink-content">
-                            <div class="flip-card-front">
-                                <div class="image-container">
-                                    <img src = "espresso/cortado.jpg" alt="red-eye coffee">
-                                </div>
-                            </div>
-                            <div class="flip-card-back">
-                                <a href = "recipe.html"> <h1> Cortado </h1></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <!-- </div> -->
-            </section>
-
-
+           
         </main>
+        <div class = "end"></div>
+        
         
     </body>
 </html>

@@ -6,17 +6,47 @@ for(let i = 0; i < drinks.length; i++){
 }
 
 
+
+var modal = document.getElementById("modal-backdrop")
+var backdrop = document.getElementById("bean-counter-modal")
+var nameInput = document.getElementById("name-input")
+var weightInput = document.getElementById("weight-input")
+var roastFieldset = document.getElementById("roast-level")
+var notesInput = document.getElementById("note-input")
+var modalclose = document.getElementById("modal-close")
 var beanbutton = document.getElementById("bean-button")
+
+beanbutton.addEventListener("click", function() {
+    modal.style.display = "block";
+    backdrop.style.display = "block";
+})
+
 beanbutton.addEventListener("click", function(){
     document.getElementById("modal-backdrop").classList.remove("hidden")
     document.getElementById("bean-counter-modal").classList.remove("hidden")
 })
 
-var modalclose = document.getElementById("modal-close")
-modalclose.addEventListener("click", function(){
-    document.getElementById("modal-backdrop").classList.add("hidden")
-    document.getElementById("bean-counter-modal").classList.add("hidden")
-})
+modalclose.onclick = function(event){
+    if (event.target == modalclose) {
+        modal.style.display = "none";
+        backdrop.style.display = "none";
+        nameInput.value = "";
+        weightInput.value = "";
+        roastFieldset.value = "";
+        notesInput.value = "";
+    }
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById("bean-counter-modal")) {
+        modal.style.display = "none";
+        backdrop.style.display = "none";
+        nameInput.value = "";
+        weightInput.value = "";
+        roastFieldset.value = "";
+        notesInput.value = "";
+    }
+}
 
 var espressobutton = document.getElementById('espresso')
 var filterbutton = document.getElementById('filter')
@@ -33,8 +63,43 @@ filterbutton.addEventListener("click", function(){
     document.getElementById("espressoSelector").classList.add("hidden")
 })
 
+// for adding another element
+var insertBeanButton = document.getElementById('modal-submit')
+insertBeanButton.addEventListener("click", function(){
+    
+})
+
+// handling clicks from bean entries
+var beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
+
+// This function should build a modal of the information given to display for the user
+// https://bobbyhadz.com/blog/javascript-add-event-listener-to-all-elements-with-class
+beanEntries.forEach(beanEntry =>{
+    beanEntry.addEventListener('click', function hanlder(event){
+        console.log("entry clicked:", beanEntry.innerText)
+
+    })
+})
+    
+
+
+
+
+// timer
 import Timer from "/timer.js";
 
 new Timer (
     document.querySelector(".timer")
 );
+
+
+// helper functions
+
+
+// clears inputs on exit
+function clearBeans(){
+    document.getElementById('name-input').value = "";
+    document.getElementById('weight-input').value = "";
+    document.getElementById('light').checked = true
+    document.getElementById('note-input').value = "";
+}

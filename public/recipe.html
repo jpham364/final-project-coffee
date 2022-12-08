@@ -18,6 +18,8 @@
  
    <!-- Javascript -->
    <script type="module" src="index.js" charser="utf-8" defer></script>
+   <script src="recipe.js" charser="utf-8" defer></script>
+
  
  </head>
  
@@ -37,13 +39,8 @@
    <main class="content">
      <aside class="side-container">
        <div class="feature-div">
-
         <button id="bean-button" >Click to add some beans!</button>
-
         <div class = "bean-section">
-          
-          
-
 
           <div class="vertical-menu">
             
@@ -73,15 +70,15 @@
              <!-- https://codepen.io/YarivFrd/pen/PEOJLj -->
          <div class="coffee-buttons">
              <div class="toggle">
-                 <button class="" id="espresso">Espresso</button>
+                 <button onclick="getTypeSelect('espresso')" id="espresso">Espresso</button>
     
-                 <button class="" id="filter">Filter</button>
+                 <button id="filter" onclick="getTypeSelect('filter')">Filter</button>
              </div>
          </div>
        <div class="selectors">
          <div id="espressoSelector" class="hidden">
            <p>Espresso Drinks</p>
-           <select  name="espressoDrinkSelect">
+           <select  id="espressoSelect" name="espressoDrinkSelect" onchange="getDrinkSelect()">
                <option selected value="">Affogato</option>
                <option>Americano</option>
                <option>Cappuccino</option>
@@ -95,7 +92,7 @@
          </div>
          <div id="filterSelector" class="hidden">
            <p>Filter Coffee</p>
-           <select name="filterSelect">
+           <select id ="filterSelect" name="filterSelect" onchange="getDrinkSelect()">
                <option selected value="">Aeropress</option>
                <option>Chemex</option>
                <option>Clever Dripper</option>

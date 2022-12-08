@@ -23,6 +23,7 @@ export default class Timer {
       
         this.el.reset.addEventListener("click", () => {
             const inputMinutes = prompt("Enter number of minutes:");
+            console.log(inputMinutes)
       
             if (inputMinutes < 60) {
               this.stop();

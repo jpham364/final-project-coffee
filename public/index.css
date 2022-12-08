@@ -562,7 +562,7 @@ body{
   }
 
 /* Beans */
-.bean-section{
+#bean-section{
     width: 300px;
     height: 250px;
     border: rgb(188, 135, 70) solid 1px;
@@ -613,7 +613,4 @@ body{
     
 }
 
-.vertical-menu a:hover {
-    background-color: rgb(94, 88, 62); /* Dark grey background on mouse-over */
-}
 

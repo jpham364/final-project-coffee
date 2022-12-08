@@ -22,6 +22,7 @@ app.use(express.static('public'));
     // next()
   });
 
+  
   // creating routing for espresso and filter pages
   app.get('/e', function (req, res, next){
     res.status(200).sendFile(__dirname + '/public/espresso.html');
@@ -32,6 +33,24 @@ app.use(express.static('public'));
   })
 
   // beginning to route drinks
+
+  // the default drink when entering /r
+  app.get('/r', function (req, res, next){
+    
+    var defaultDrink = recipeData.espresso["affogato"]
+
+    res.status(200).render('recipePage', {
+      name: defaultDrink.name,
+      img: defaultDrink.img,
+      ingredients: defaultDrink.ingredients,
+      howto: defaultDrink.howto,
+      diff: defaultDrink.diff
+    })
+
+  })
+
+
+
   app.get('/r/:drink', function(req, res, next){
     console.log(" --req.params:", req.params)
 

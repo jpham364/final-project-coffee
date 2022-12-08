@@ -81,7 +81,10 @@ beanEntries.forEach(beanEntry =>{
     })
 })
     
+function addBeanData(name, weight, roast, note) {
 
+    
+}
 
 
 
@@ -104,16 +107,3 @@ function clearBeans(){
     document.getElementById('note-input').value = "";
 }
 
-
-/* send data to recipe */
-const selector = 'espressoSelect'
-function getTypeSelect(type){
-    console.log(type)
-}
-
-function getDrinkSelect(){
-    console.log(selector)
-    //var drink = document.getElementById(selector).value.trim()
-    console.log(drink)
-    console.log("we can combine this to be the drink data for recipe templatize")
-}

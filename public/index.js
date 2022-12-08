@@ -81,7 +81,10 @@ beanEntries.forEach(beanEntry =>{
     })
 })
     
+function addBeanData(name, weight, roast, note) {
 
+    
+}
 
 
 
@@ -103,3 +106,5 @@ function clearBeans(){
     document.getElementById('light').checked = true
     document.getElementById('note-input').value = "";
 }
+
+

@@ -35,7 +35,7 @@
             "howto": "Pull shots and enjoy",
             "diff": "This classic approach puts the espresso taste at the forefront"
         },
-        "Latte": {
+        "latte": {
             "name": "Latte",
             "img": "/espresso/latte.jpg",
             "ingredients": "steamed milk, milk foam, shots of espresso",

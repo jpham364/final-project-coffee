@@ -8,10 +8,10 @@ templates['recipe'] = template({"compiler":[8,">= 4.3.0"],"main":function(contai
         return undefined
     };
 
-  return "      <div class=\"drink-directions\">\n            <div class=\"drink\">\n              <div class=\"drink-content\">\n                  <div class=\"flip-card-front\">\n                      <div class=\"recipe-image-container\">\n                          <img src ="
-    + alias4(((helper = (helper = lookupProperty(helpers,"img") || (depth0 != null ? lookupProperty(depth0,"img") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img","hash":{},"data":data,"loc":{"start":{"line":6,"column":36},"end":{"line":6,"column":43}}}) : helper)))
-    + " alt="
-    + alias4(((helper = (helper = lookupProperty(helpers,"name") || (depth0 != null ? lookupProperty(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":6,"column":48},"end":{"line":6,"column":56}}}) : helper)))
+  return "      <div class=\"drink-directions\">\n            <div class=\"drink\">\n              <div class=\"drink-content\">\n                  <div class=\"flip-card-front\">\n                      <div class=\"recipe-image-container\">\n                          <img src =\""
+    + alias4(((helper = (helper = lookupProperty(helpers,"img") || (depth0 != null ? lookupProperty(depth0,"img") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img","hash":{},"data":data,"loc":{"start":{"line":6,"column":37},"end":{"line":6,"column":44}}}) : helper)))
+    + "\" alt="
+    + alias4(((helper = (helper = lookupProperty(helpers,"name") || (depth0 != null ? lookupProperty(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":6,"column":50},"end":{"line":6,"column":58}}}) : helper)))
     + ">\n                      </div>\n                  </div>\n                  <div class=\"flip-card-back\">\n                      <a href=\"#\"> <h1> "
     + alias4(((helper = (helper = lookupProperty(helpers,"name") || (depth0 != null ? lookupProperty(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":10,"column":40},"end":{"line":10,"column":48}}}) : helper)))
     + " </h1> </a>\n                  </div>\n              </div>    \n          </div>\n          <div class=\"recipe-container\">\n              <div class=\"drink-name\">\n                <h1>"

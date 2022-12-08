@@ -43,12 +43,25 @@ app.use(express.static('public'));
     // checks if the parameters match any of the drinks
     if (espressoData){
       console.log("== data for", drink, ":", espressoData)
-      res.status(200).render('recipePage')
+      res.status(200).render('recipePage', {
+        name: espressoData.name,
+        img: espressoData.img,
+        ingredients: espressoData.ingredients,
+        howto: espressoData.howto,
+        diff: espressoData.diff
+      })
       
     }
 
     if (filterData){
       console.log("== data for", drink, ":", filterData)
+      res.status(200).render('recipePage', {
+        name: filterData.name,
+        img: filterData.img,
+        ingredients: filterData.ingredients,
+        howto: filterData.howto,
+        diff: filterData.diff
+      })
     }
 
     if (!filterData && !espressoData){

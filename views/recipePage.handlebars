@@ -1,4 +1,5 @@
 {{!-- Formatted header all on main --}}
+<script src="/public/index.js" charser="utf-8" defer></script>
    <main class="content">
      <aside class="side-container">
        <div class="feature-div">
@@ -25,7 +26,7 @@
        <div class="selectors">
          <div id="espressoSelector" class="hidden">
            <p>Espresso Drinks</p>
-           <select  name="espressoDrinkSelect">
+           <select  name="espressoDrinkSelect" onchange="getDrinkSelect()">
                <option selected value="">Affogato</option>
                <option>Americano</option>
                <option>Cappuccino</option>
@@ -39,7 +40,7 @@
          </div>
           <div id="filterSelector" class="hidden">
             <p>Filter Coffee</p>
-            <select name="filterSelect">
+            <select name="filterSelect" onchange="getDrinkSelect()">
                 <option selected value="">Aeropress</option>
                 <option>Chemex</option>
                 <option>Clever Dripper</option>

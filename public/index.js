@@ -107,4 +107,3 @@ function clearBeans(){
     document.getElementById('note-input').value = "";
 }
 
-

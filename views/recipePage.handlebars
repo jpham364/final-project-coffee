@@ -1,4 +1,4 @@
-{{!-- Formatted header all on main --}}
+z{{!-- Formatted header all on main --}}
    <main class="content">
      <aside class="side-container">
        <div class="feature-div">
@@ -121,4 +121,39 @@
   
      </div>
   </div>
+
+  <div id="modal-backdrop2" class="hidden"></div>
+        <div id="bean-counter-modal2" class="hidden">
+            <div class="modal-dialog2">
+
+              <div class="modal-header2">
+                  <h3> {{beanName}}</h3>
+                  <button type="button" id="modal-close2" class="modal-hide-button">&times;</button>
+              </div>
+
+            <div class="modal-body2">
+                <div class="input2">
+                    <label for="text-entry2">Name:</label>
+                    <p>{{beanName}}</p>
+                </div>
+
+                <div class="input2">
+                    <label for="text-entry2">Weight (in grams):</label>
+                    <p>{{weight}}</p>
+                </div>
+
+                <div class="input2">
+                    <label for="text-entry2">Roast Level:</label>
+                    <p>{{roast}}</p>
+                </div>
+
+                <div class="input2">
+                    <label for="text-entry2">Notes:</label>
+                    <p>{{notes}}</p>
+                </div>
+            </div> 
+          <div class="modal-footer">
+          </div>
+        </div>
+    </div>
 </body>

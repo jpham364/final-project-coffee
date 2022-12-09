@@ -48,6 +48,50 @@ window.onclick = function(event) {
     }
 }
 
+// Second Modal
+
+var modal2 = document.getElementById("modal-backdrop2")
+var backdrop2 = document.getElementById("bean-counter-modal2")
+var nameInput2 = document.getElementById("name-input2")
+var weightInput2 = document.getElementById("weight-input2")
+var roastFieldset2 = document.getElementById("roast-level-light2")
+var notesInput = document.getElementById("note-input")
+var modalclose2 = document.getElementById("modal-close2")
+
+userData.addEventListener("click", function() {
+    modal2.style.display = "block";
+    backdrop2.style.display = "block";
+})
+
+userData.addEventListener("click", function(){
+    document.getElementById("modal-backdrop2").classList.remove("hidden")
+    document.getElementById("bean-counter-modal2").classList.remove("hidden")
+})
+
+modalclose2.onclick = function(event){
+    if (event.target == modalclose2) {
+        modal2.style.display = "none";
+        backdrop2.style.display = "none";
+        nameInput.value = "";
+        weightInput.value = "";
+        roastFieldset.checked = true;
+        notesInput.value = "";
+    }
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById("bean-counter-modal2")) {
+        modal2.style.display = "none";
+        backdrop2.style.display = "none";
+        nameInput.value = "";
+        weightInput.value = "";
+        roastFieldset.checked = true;
+        notesInput.value = "";
+    }
+}
+
+
+
 var espressobutton = document.getElementById('espresso')
 var filterbutton = document.getElementById('filter')
 espressobutton.addEventListener("click", function(){

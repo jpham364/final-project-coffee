@@ -525,7 +525,6 @@ body{
 .timer {
 
     position: relative;
-    left: 25px;
 
     font-family: sans-serif;
     /* max-width: 100%;
@@ -758,9 +757,17 @@ body{
   align-items: center;
 }
 
-#submit-buttom {
+#box-3 button {
+  margin: 10px;
+  position: relative;
+  left: 15px;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+#submit-buttton {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 #steps{

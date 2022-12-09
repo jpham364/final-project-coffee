@@ -19,49 +19,23 @@
 
        <div class="feature-div">
          <!-- https://javascript.plainenglish.io/build-a-pomodoro-timer-using-html-css-and-javascript-7a7a8410052c -->
-          <div class="outer-ring" id="outer-ring">
+          <div id="timer">
             <div class="timer"></div>
           </div>
         </div>
  
      </aside>
- 
- 
-     <section class="directions">
-       <div class="selectors">
-         <div id="espressoSelector" class="hidden">
-           <p>Espresso Drinks</p>
-           <select  id="espressoSelect" name="espressoDrinkSelect" onchange="getDrinkSelect()">
-               <option selected value="">Affogato</option>
-               <option>Americano</option>
-               <option>Cappuccino</option>
-               <option>Cortado</option>
-               <option>Espresso</option>
-               <option>Latte</option>
-               <option>Mocha</option>
-               <option>Red Eye</option>
-               <option>Sparkling Americano</option>
-           </select>
-         </div>
-          <div id="filterSelector" class="hidden">
-            <p>Filter Coffee</p>
-            <select id="filterSelect" name="filterSelect" onchange="getDrinkSelect()">
-                <option selected value="">Aeropress</option>
-                <option>Chemex</option>
-                <option>Clever Dripper</option>
-                <option>French Press</option>
-                <option>Kalita Wave</option>
-                <option>Moka Pot</option>
-                <option>Orimgami</option>
-                <option>Stagg X</option>
-                <option>V60</option>
-                </select>
-          </div>
+
+     <section>
      </div>
         {{#if isDrink}}
           {{> recipe}}  
         {{/if}}
         {{#if isSelection}}
+            <span>
+              <p> "Welcome to the recipe maker page! Simply select your type of drink (Espresso or Filter) and then select your drink from the drop down" <br>
+               <br> Finally, press submit and we'll show you how to make it!</p>
+            </span> 
           {{> selection}}
         {{/if}}
      </section>

@@ -711,9 +711,20 @@ body{
     background-color: rgb(112, 80, 29);
   }
 
-  }
 
   /* recipe page */
+  #step-box{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(186, 136, 84);
+    content-visibility: visible;
+    align-items: center;
+    justify-content: center;
+  }
+
 .directions {
     display: flex; 
     flex-wrap: wrap;
@@ -726,28 +737,26 @@ body{
 .directions > .selectors {order: 3; }
 .directions > .coffee-buttons {order: 1; }
 
-.selectors {
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgb(186, 136, 84);
-    content-visibility: visible;
-    align-items: center;
-}
 
-.toggle {
-    width: 200px;
-    height: 200px;
-}
-
-.selectors button{
-    background-color: black;
-    color: white;
+#step-box button{
+    background-color: rgb(112, 80, 29);
     border-radius: 30px;
+    border-color: rgb(112,80, 29);
     transition: transform 0.3s ease;
     height: 60px;
     width: 120px;
     font-size: 200%;
+}
+
+#toggle button{
+  margin: 10px;
+}
+
+#steps{
+  background-color: rgb(112, 80, 29);
+  border-radius: 30px;
+  border-color: rgb(112,80, 29);
+  height: 60px;
+  width: 120px;
+  font-size: 150%
 }

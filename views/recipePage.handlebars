@@ -1,23 +1,26 @@
 {{!-- Formatted header all on main --}}
-<script src="/public/index.js" charser="utf-8" defer></script>
    <main class="content">
      <aside class="side-container">
        <div class="feature-div">
 
         <button id="bean-button" >Click to add some beans!</button>
 
-        <div class = "bean-section">
-          <div class="vertical-menu">
+        <section id = "bean-section">        
+
+            {{!-- {{#each beanArray}} --}}
+              {{!-- {{> bean}} --}}
+            {{!-- {{/each}} --}}
             
-            <div class = "beanEntry">This is 1</div>
-            <div class = "beanEntry">This is 2</div>
-            <div class = "beanEntry">This is 3</div>
-            <div class = "beanEntry">This is 4</div>
-            <div class = "beanEntry">This is 5</div>
-            <div class = "beanEntry">This is 6</div>
           </div> 
          </div>
        </div>
+
+       <div class="feature-div">
+         <!-- https://javascript.plainenglish.io/build-a-pomodoro-timer-using-html-css-and-javascript-7a7a8410052c -->
+          <div class="outer-ring" id="outer-ring">
+            <div class="timer"></div>
+          </div>
+        </div>
  
      </aside>
  
@@ -79,21 +82,21 @@
 
           <div class ="input-button">
             
-            <fieldset id ="roast-level">
+            <fieldset id ="roast-level-fieldset">
               <legend> Roast Level:</legend>
               <div>
-                <input type="radio" id="light" name="roast" value = "light">
-                <label for= "light">Light</label>
+                <input type="radio" id="roast-level-light" name="roast-level" value = "light" checked>
+                <label for= "roast-level-light">Light</label>
               </div>  
 
               <div>
-                <input type="radio" id="medium" name="roast" value = "medium">
-                <label for= "light">Medium</label>
+                <input type="radio" id="roast-level-medium" name="roast-level" value = "medium">
+                <label for= "roast-level-medium">Medium</label>
               </div>
 
               <div>
-                <input type="radio" id="dark" name="roast" value = "dark">
-                <label for= "light">Dark</label>
+                <input type="radio" id="roast-level-dark" name="roast-level" value = "dark">
+                <label for= "roast-level-dark">Dark</label>
               </div>
             </fieldset>
 

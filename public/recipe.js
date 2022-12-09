@@ -1,7 +1,7 @@
 /* send data to recipe */
 var selector = ''
 var drinktype = ''
-var drinkSelected = []
+var drinkR = 'affogato'
 function getTypeSelect(type){
     if(type == 'espresso'){
         console.log('espresso')
@@ -30,5 +30,5 @@ function getDrinkSelect(){
 function drinkSubmit(){
     console.log("/r/" + drinkR)
     var address = "/r/" + drinkR
-    window.open(address)
+    window.open(address, "_self")
 }

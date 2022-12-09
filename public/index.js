@@ -55,24 +55,47 @@ var backdrop2 = document.getElementById("bean-counter-modal2")
 var notesInput = document.getElementById("note-input")
 var modalclose2 = document.getElementById("modal-close2")
 
-userData.addEventListener("click", function() {
-    modal2.style.display = "block";
-    backdrop2.style.display = "block";
-})
+var beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
 
-userData.addEventListener("click", function(){
-    document.getElementById("modal-backdrop2").classList.remove("hidden")
-    document.getElementById("bean-counter-modal2").classList.remove("hidden")
+
+// This function should build a modal of the information given to display for the user
+// https://bobbyhadz.com/blog/javascript-add-event-listener-to-all-elements-with-class
+beanEntries.forEach(beanEntry =>{
+    beanEntry.addEventListener('click', function handler(event){
+        console.log("entry clicked:", beanEntry.innerText)
+
+        var beanName = document.getElementById("beanName1")
+        beanName.textContent = beanEntry.dataset.name
+
+        var weight = document.getElementById("weight")
+        weight.textContent = beanEntry.dataset.weight
+        
+        var roast = document.getElementById("roast")    
+        roast.textContent = beanEntry.dataset.roast  
+
+        var notes = document.getElementById("notes")
+        notes.textContent = beanEntry.dataset.notes
+
+        modal2.style.display = "block";
+        backdrop2.style.display = "block";
+
+    })
 })
+// userData.addEventListener("click", function() {
+//     modal2.style.display = "block";
+//     backdrop2.style.display = "block";
+// })
+
+// userData.addEventListener("click", function(){
+//     document.getElementById("modal-backdrop2").classList.remove("hidden")
+//     document.getElementById("bean-counter-modal2").classList.remove("hidden")
+// })
 
 modalclose2.onclick = function(event){
     if (event.target == modalclose2) {
         modal2.style.display = "none";
         backdrop2.style.display = "none";
-        nameInput.value = "";
-        weightInput.value = "";
-        roastFieldset.checked = true;
-        notesInput.value = "";
+
     }
 }
 
@@ -80,10 +103,6 @@ window.onclick = function(event) {
     if (event.target == document.getElementById("bean-counter-modal2")) {
         modal2.style.display = "none";
         backdrop2.style.display = "none";
-        nameInput.value = "";
-        weightInput.value = "";
-        roastFieldset.checked = true;
-        notesInput.value = "";
     }
 }
 

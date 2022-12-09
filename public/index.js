@@ -2,7 +2,7 @@ var drinks = document.getElementsByClassName("drink")
 
 
 for(let i = 0; i < drinks.length; i++){
-    drinks[i].onclick= function(){window.open("/recipe.html", "_self")}
+    drinks[i].onclick= function(){window.open("/r", "_self")}
 }
 
 
@@ -105,6 +105,26 @@ filterbutton.addEventListener("click", function(){
 })
 
 
+// for adding another element
+var insertBeanButton = document.getElementById('modal-submit')
+insertBeanButton.addEventListener("click", function(){
+    
+})
+
+// handling clicks from bean entries
+var beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
+
+// This function should build a modal of the information given to display for the user
+// https://bobbyhadz.com/blog/javascript-add-event-listener-to-all-elements-with-class
+beanEntries.forEach(beanEntry =>{
+    beanEntry.addEventListener('click', function hanlder(event){
+        console.log("entry clicked:", beanEntry.innerText)
+
+    })
+})
+    
+
+
 // timer
 import Timer from "/timer.js";
 
@@ -117,4 +137,11 @@ new Timer (
 
 
 
+// clears inputs on exit
+function clearBeans(){
+    document.getElementById('name-input').value = "";
+    document.getElementById('weight-input').value = "";
+    document.getElementById('light').checked = true
+    document.getElementById('note-input').value = "";
+}
 

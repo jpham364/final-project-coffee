@@ -702,3 +702,11 @@ body{
   .input2 p {
     text-align: right;
   }
+
+  #play-button{
+    background-color: rgb(112, 80, 29);
+  }
+
+  #timer-button{
+    background-color: rgb(112, 80, 29);
+  }

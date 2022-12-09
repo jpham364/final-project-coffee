@@ -52,9 +52,6 @@ window.onclick = function(event) {
 
 var modal2 = document.getElementById("modal-backdrop2")
 var backdrop2 = document.getElementById("bean-counter-modal2")
-var nameInput2 = document.getElementById("name-input2")
-var weightInput2 = document.getElementById("weight-input2")
-var roastFieldset2 = document.getElementById("roast-level-light2")
 var notesInput = document.getElementById("note-input")
 var modalclose2 = document.getElementById("modal-close2")
 

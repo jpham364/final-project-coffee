@@ -23,11 +23,14 @@ function getDrinkSelect(){
     var drink = document.getElementById(selector).value.trim()
     console.log(drink)
     /*regex expression to remove spaces: https://stackoverflow.com/questions/6163169/replace-multiple-whitespaces-with-single-whitespace-in-javascript-string */
-    drinkRet = (drink.replace(/ /g, ''))
-    drinkR = drinkRet.toLowerCase()
-    console.log(drinkR)
-    drinkAddress = drinkR
-    return drinkR
+    if(drink == ''){alert("Select a drink please")}
+    else{
+        drinkRet = (drink.replace(/ /g, ''))
+        drinkR = drinkRet.toLowerCase()
+        console.log(drinkR)
+        drinkAddress = drinkR
+        return drinkR
+    }
 }
 
 function drinkSubmit(){

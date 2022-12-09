@@ -132,29 +132,34 @@
             <div class="modal-dialog2">
 
               <div class="modal-header2">
-                  <h3> {{beanName}}</h3>
+                  <h3 id = header>Bean:</h3>
+                  {{!-- <h3> {{beanName}}</h3> --}}
                   <button type="button" id="modal-close2" class="modal-hide-button">&times;</button>
               </div>
 
             <div class="modal-body2">
                 <div class="input2">
-                    <label for="text-entry2">Name:</label>
-                    <p>{{beanName}}</p>
+                    <label for="text-entry2">Name: </label>
+                    <p id = beanName1>  </p>
+                    {{!-- <p>{{beanName}}</p> --}}
                 </div>
 
                 <div class="input2">
                     <label for="text-entry2">Weight (in grams):</label>
-                    <p>{{weight}}</p>
+                    <p id = weight> </p>
+                    {{!-- <p>{{weight}}</p> --}}
                 </div>
 
                 <div class="input2">
                     <label for="text-entry2">Roast Level:</label>
-                    <p>{{roast}}</p>
+                    <p id = roast> </p>
+                    {{!-- <p>{{roast}}</p> --}}
                 </div>
 
                 <div class="input2">
                     <label for="text-entry2">Notes:</label>
-                    <p>{{notes}}</p>
+                    <p id = notes> </p>
+                    {{!-- <p>{{notes}}</p> --}}
                 </div>
             </div> 
           <div class="modal-footer">

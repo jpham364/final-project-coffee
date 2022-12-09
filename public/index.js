@@ -2,7 +2,7 @@ var drinks = document.getElementsByClassName("drink")
 
 
 for(let i = 0; i < drinks.length; i++){
-    drinks[i].onclick= function(){window.open("/recipe.html", "_self")}
+    drinks[i].onclick= function(){window.open("/r", "_self")}
 }
 
 
@@ -81,10 +81,7 @@ beanEntries.forEach(beanEntry =>{
     })
 })
     
-function addBeanData(name, weight, roast, note) {
 
-    
-}
 
 
 
@@ -106,4 +103,3 @@ function clearBeans(){
     document.getElementById('light').checked = true
     document.getElementById('note-input').value = "";
 }
-

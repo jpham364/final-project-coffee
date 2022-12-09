@@ -31,7 +31,7 @@ z{{!-- Formatted header all on main --}}
        <div class="selectors">
          <div id="espressoSelector" class="hidden">
            <p>Espresso Drinks</p>
-           <select  name="espressoDrinkSelect" onchange="getDrinkSelect()">
+           <select  id="espressoSelect" name="espressoDrinkSelect" onchange="getDrinkSelect()">
                <option selected value="">Affogato</option>
                <option>Americano</option>
                <option>Cappuccino</option>
@@ -45,7 +45,7 @@ z{{!-- Formatted header all on main --}}
          </div>
           <div id="filterSelector" class="hidden">
             <p>Filter Coffee</p>
-            <select name="filterSelect" onchange="getDrinkSelect()">
+            <select id="filterSelect" name="filterSelect" onchange="getDrinkSelect()">
                 <option selected value="">Aeropress</option>
                 <option>Chemex</option>
                 <option>Clever Dripper</option>
@@ -58,7 +58,12 @@ z{{!-- Formatted header all on main --}}
                 </select>
           </div>
      </div>
-         {{> recipe}}  
+        {{#if isDrink}}
+          {{> recipe}}  
+        {{/if}}
+        {{#if isSelection}}
+          {{> selection}}
+        {{/if}}
      </section>
  </main>
  

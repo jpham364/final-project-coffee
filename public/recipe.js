@@ -10,6 +10,7 @@ function getTypeSelect(type){
         drinktype = type
     }
     if(type == 'filter'){
+        document.getElementById("selectorDiv").classList.remove("hidden")
         console.log('filter')
         selector = "filterSelect"
         drinktype = type

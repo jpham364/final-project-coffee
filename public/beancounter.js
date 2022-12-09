@@ -5,19 +5,25 @@ var backdrop = document.getElementById("bean-counter-modal")
 // gathering array of beans 
 var beanArray = []
 
+// modal 2
+// var modal2 = document.getElementById("modal-backdrop2")
+// var backdrop2 = document.getElementById("bean-counter-modal2")
+// var notesInput = document.getElementById("note-input")
+// var modalclose2 = document.getElementById("modal-close2")
 
+// // // handling clicks from bean entries
+// var beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
 
-// // handling clicks from bean entries
-var beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
+// // This function should build a modal of the information given to display for the user
+// // https://bobbyhadz.com/blog/javascript-add-event-listener-to-all-elements-with-class
+// beanEntries.forEach(beanEntry =>{
+//     beanEntry.addEventListener('click', function handler(event){
+//         console.log("entry clicked:", beanEntry.innerText)
+//         modal2.style.display = "block";
+//         backdrop2.style.display = "block";
 
-// This function should build a modal of the information given to display for the user
-// https://bobbyhadz.com/blog/javascript-add-event-listener-to-all-elements-with-class
-beanEntries.forEach(beanEntry =>{
-    beanEntry.addEventListener('click', function handler(event){
-        console.log("entry clicked:", beanEntry.innerText)
-
-    })
-})
+//     })
+// })
 
 // for adding another element
 var insertBeanButton = document.getElementById('modal-submit')

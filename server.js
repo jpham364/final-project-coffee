@@ -8,7 +8,18 @@ const { resourceUsage } = require('process');
 var app = express();
 var port = process.env.PORT || 3000;
 app.set('view engine', 'handlebars')
+
+// added json express
+app.use(express.json())
 app.use(express.static('public'));
+
+// add fs module
+var fs = require('fs')
+
+
+// gather bean data
+var beanData = require("./counterData.json")
+console.log("-- beanData:", beanData)
 
 app.engine('handlebars', expressbars.engine({
   defaultLayout: "main"
@@ -32,7 +43,7 @@ app.use(express.static('public'));
     res.status(200).sendFile(__dirname + '/public/filter.html');
   })
 
-  // beginning to route drinks
+
 
   // the default drink when entering /r
   app.get('/r', function (req, res, next){
@@ -44,7 +55,9 @@ app.use(express.static('public'));
       img: defaultDrink.img,
       ingredients: defaultDrink.ingredients,
       howto: defaultDrink.howto,
-      diff: defaultDrink.diff
+      diff: defaultDrink.diff,
+
+      beanArray: beanData
     })
 
   })
@@ -67,7 +80,9 @@ app.use(express.static('public'));
         img: espressoData.img,
         ingredients: espressoData.ingredients,
         howto: espressoData.howto,
-        diff: espressoData.diff
+        diff: espressoData.diff,
+
+        beanArray: beanData
       })
       
     }
@@ -79,7 +94,9 @@ app.use(express.static('public'));
         img: filterData.img,
         ingredients: filterData.ingredients,
         howto: filterData.howto,
-        diff: filterData.diff
+        diff: filterData.diff,
+
+        beanArray: beanData
       })
     }
 
@@ -88,6 +105,67 @@ app.use(express.static('public'));
     }
       
 
+  })
+
+
+  // // posting data 
+  // app.post('/r/addBean', function(req, res, next){
+  //   console.log(" -- req.body", req.body)
+  //   // data verification
+  //   if (req.body && req.body.beanName && req.body.weight){
+
+
+  //     next();
+  //   }
+  //   else{
+  //     res.status(400).send("Request didn't have a bdoy with a 'beanName' and 'weight'"  )
+  //   }
+
+    
+  // })
+
+  // app.post('/r/:drink/addBean', function(req, res, next){
+  //   console.log(" -- req.body", req.body)
+  //   next();
+  // })
+
+  // https://stackoverflow.com/questions/39731593/get-method-with-colon-and-question-mark-in-server-path
+  app.post('/r/:drink?/addBean', function(req, res, next){
+    console.log(" -- req.body", req.body)
+    // data verification
+    if (req.body && req.body.beanName && req.body.weight){
+      var bean = {
+        beanName: req.body.beanName,
+        weight: req.body.weight,
+        roast: req.body.roast,
+        notes: req.body.notes
+      }
+
+      beanData.push(bean)
+      console.log(" -- beanData", beanData)
+      
+
+      fs.writeFile(
+        './counterData.json',
+        JSON.stringify(beanData, null, 2),
+        function(err){
+          if (err){
+            res.status(500).send("Error database")
+          }
+          else{
+            res.status(200).send("Bean data successfully added")
+          }
+        }
+      )
+
+    }
+    else{
+      res.status(400).send("Request didn't have a bdoy with a 'beanName' and 'weight'"  )
+    }
+
+   
+
+    
   })
 
   app.get('*', function (req, res) {

@@ -564,7 +564,7 @@ body{
 /* Beans */
 #bean-section{
     width: 300px;
-    height: 250px;
+    height: 200px;
     border: rgb(188, 135, 70) solid 1px;
     
     overflow-x: hidden;

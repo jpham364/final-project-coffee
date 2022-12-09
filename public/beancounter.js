@@ -7,7 +7,7 @@ var beanArray = []
 
 
 
-// handling clicks from bean entries
+// // handling clicks from bean entries
 var beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
 
 // This function should build a modal of the information given to display for the user
@@ -49,7 +49,6 @@ insertBeanButton.addEventListener('click', function(){
     
 })
 
-
     
 function addBeanData(name, weight, roast, note) {
 
@@ -63,10 +62,17 @@ function addBeanData(name, weight, roast, note) {
 
     })
 
-    console.log("== bean entry:", beanHTML);
+    
 
     var beanSection = document.getElementById('bean-section');
-    beanSection.insertAdjacentHTML("beforeend", beanHTML)
+    beanSection.insertAdjacentHTML("beforeend", beanHTML);
+
+    beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
+    console.log("== bean entry:", beanEntries);
+
+    
+
+    
     
 }
 

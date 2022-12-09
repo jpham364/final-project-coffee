@@ -76,11 +76,44 @@ beanEntries.forEach(beanEntry =>{
         var notes = document.getElementById("notes")
         notes.textContent = beanEntry.dataset.notes
 
+        // testing weight listener
+
+        weight.addEventListener('click', function(){
+            console.log("clicked weight!")
+            var update = prompt("Update weight:")
+            if (update == null || update == ""){
+                return;
+            }
+            else{
+                beanEntry.dataset.weight = update
+                weight.textContent = beanEntry.dataset.weight
+                updateWeightData(weight.textContent, beanName.textContent)
+                modal2.style.display = "block"
+
+            }
+        })
+
         modal2.style.display = "block";
         backdrop2.style.display = "block";
 
     })
 })
+
+
+function updateWeightData(weight, name) {
+    var reqUrl = window.location.pathname +"/updateWeight"
+    // console.log("test:", reqUrl.weight);
+    fetch(reqUrl, {
+        method: "POST",
+        body: JSON.stringify({
+            beanName: name,
+            weight: weight
+        }),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+}
 // userData.addEventListener("click", function() {
 //     modal2.style.display = "block";
 //     backdrop2.style.display = "block";

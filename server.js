@@ -132,6 +132,36 @@ app.use(express.static('public'));
   //   next();
   // })
 
+  app.post('/r/:drink?/updateWeight', function(req, res, next){
+    // loop through each beanData index
+    console.log("weight request:", req.body)
+    if (req.body && req.body.weight){
+
+      for (var i = 0; i < beanData.length; i++){
+        // if the request matches the beanName
+        if(req.body.beanName == beanData[i].beanName){
+          beanData[i].weight = req.body.weight; 
+          break;
+        }
+      }
+
+      fs.writeFile(
+        './counterData.json',
+        JSON.stringify(beanData, null, 2),
+        function(err){
+          if (err){
+            res.status(500).send("Error database")
+          }
+          else{
+            res.status(200).send("Weight successfully updated")
+          }
+        }
+      )
+      
+    }
+      
+  })
+
   // https://stackoverflow.com/questions/39731593/get-method-with-colon-and-question-mark-in-server-path
   app.post('/r/:drink?/addBean', function(req, res, next){
     console.log(" -- req.body", req.body)

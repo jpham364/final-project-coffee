@@ -4,6 +4,7 @@ var drinktype = ''
 var drinkR = 'affogato'
 function getTypeSelect(type){
     if(type == 'espresso'){
+        document.getElementById("selectorDiv").classList.remove("hidden")
         console.log('espresso')
         selector = "espressoSelect"
         drinktype = type
@@ -17,6 +18,7 @@ function getTypeSelect(type){
 
 var drinkAddress = ''
 function getDrinkSelect(){
+    document.getElementById("submitDiv").classList.remove("hidden")
     var drink = document.getElementById(selector).value.trim()
     console.log(drink)
     /*regex expression to remove spaces: https://stackoverflow.com/questions/6163169/replace-multiple-whitespaces-with-single-whitespace-in-javascript-string */

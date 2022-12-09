@@ -10,42 +10,46 @@
                 </div>
             </div>
         </div>
-        <div id="step-box">
-            <h1>Step 2</h1>
-        <div class="selectors">
-            <div id="espressoSelector" class="hidden">
-              <p>Espresso Drinks</p>
-              <select  id="espressoSelect" name="espressoDrinkSelect" onchange="getDrinkSelect()">
-                  <option selected value="">Affogato</option>
-                  <option>Americano</option>
-                  <option>Cappuccino</option>
-                  <option>Cortado</option>
-                  <option>Espresso</option>
-                  <option>Latte</option>
-                  <option>Mocha</option>
-                  <option>Red Eye</option>
-                  <option>Sparkling Americano</option>
-              </select>
+        <div id="selectorDiv" class="hidden">
+            <div id="step-box">
+                <h1>Step 2</h1>
+            <div class="selectors">
+                <div id="espressoSelector" class="hidden">
+                <p>Espresso Drinks</p>
+                <select  id="espressoSelect" name="espressoDrinkSelect" onchange="getDrinkSelect()">
+                    <option selected value="">Affogato</option>
+                    <option>Americano</option>
+                    <option>Cappuccino</option>
+                    <option>Cortado</option>
+                    <option>Espresso</option>
+                    <option>Latte</option>
+                    <option>Mocha</option>
+                    <option>Red Eye</option>
+                    <option>Sparkling Americano</option>
+                </select>
+                </div>
+                <div id="filterSelector" class="hidden">
+                <p>Filter Coffee</p>
+                <select id ="filterSelect" name="filterSelect" onchange="getDrinkSelect()">
+                    <option selected value="">Aeropress</option>
+                    <option>Chemex</option>
+                    <option>Clever Dripper</option>
+                    <option>French Press</option>
+                    <option>Kalita Wave</option>
+                    <option>Moka Pot</option>
+                    <option>Origami</option>
+                    <option>Stagg X</option>
+                    <option>V60</option>
+                    </select>
+                </div>
             </div>
-            <div id="filterSelector" class="hidden">
-              <p>Filter Coffee</p>
-              <select id ="filterSelect" name="filterSelect" onchange="getDrinkSelect()">
-                  <option selected value="">Aeropress</option>
-                  <option>Chemex</option>
-                  <option>Clever Dripper</option>
-                  <option>French Press</option>
-                  <option>Kalita Wave</option>
-                  <option>Moka Pot</option>
-                  <option>Origami</option>
-                  <option>Stagg X</option>
-                  <option>V60</option>
-                  </select>
-              </div>
-          </div>
+            </div>
         </div>
-        <div id="step-box">
-            <h1>Step 3</h1>
-            <button id="submit-button" onclick="drinkSubmit()">submit</button>
+        <div id="submitDiv" class="hidden">
+            <div id="step-box">
+                <h1>Step 3</h1>
+                <button id="submit-button" onclick="drinkSubmit()">submit</button>
+            </div>
         </div>
     </div>
     

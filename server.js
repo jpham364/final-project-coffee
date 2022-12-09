@@ -30,7 +30,7 @@ app.use(express.static('public'));
   app.get('/', function (req, res, next) {
     
     res.status(200).sendFile(__dirname + '/public/index.html');
-    // next()
+      next()
   });
 
   
@@ -57,9 +57,10 @@ app.use(express.static('public'));
       howto: defaultDrink.howto,
       diff: defaultDrink.diff,
 
-      beanArray: beanData
+      beanArray: beanData,
+      isDrink: false,
+      isSelection: true
     })
-
   })
 
 
@@ -82,9 +83,10 @@ app.use(express.static('public'));
         howto: espressoData.howto,
         diff: espressoData.diff,
 
-        beanArray: beanData
+        beanArray: beanData,
+        isDrink: true,
+        isSelection: false
       })
-      
     }
 
     if (filterData){
@@ -96,7 +98,9 @@ app.use(express.static('public'));
         howto: filterData.howto,
         diff: filterData.diff,
 
-        beanArray: beanData
+        beanArray: beanData,
+        isDrink: true,
+        isSelection: false
       })
     }
 
@@ -104,7 +108,6 @@ app.use(express.static('public'));
         next();
     }
       
-
   })
 
 
@@ -162,10 +165,7 @@ app.use(express.static('public'));
     else{
       res.status(400).send("Request didn't have a bdoy with a 'beanName' and 'weight'"  )
     }
-
-   
-
-    
+      
   })
 
   app.get('*', function (req, res) {

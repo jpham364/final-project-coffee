@@ -102,7 +102,7 @@
             "howto": "Saturate grounds with 60g of water for 10 seconds. After 45 seconds, pour water up to 200g. Pour water periodically in 50g amounts to target water at around 3:00.",
             "diff": "Is made out of stainless steel and uses a flat bottom to ensure even extraction!"
         },
-        "moka": {
+        "mokapot": {
             "name": "Moka",
             "img": "/filter/moka.jpg",
             "ingredients": "Coffee: 16g at very fine grind / Water: preheated and fill to max-fill edge of brewer ",
@@ -116,7 +116,7 @@
             "howto": "Pour initial 50ml to bloom coffee. After 40 seconds, slowly pour 200 ml of water.",
             "diff": "Elegant design and can use a variety of filters. "
         },
-        "stagg": {
+        "staggx": {
             "name": "Stagg X",
             "img": "/filter/stagg.jpg",
             "ingredients": "Coffee: 22g at medium-fine grind / Water: 350g, 205F / Stagg Filters",

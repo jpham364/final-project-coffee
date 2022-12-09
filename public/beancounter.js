@@ -52,27 +52,42 @@ insertBeanButton.addEventListener('click', function(){
     
 function addBeanData(name, weight, roast, note) {
 
-    // adding HTML for tab 
-    var beanHTML = Handlebars.templates.bean({
+    var reqUrl = window.location.pathname + "/addBean"
 
-        beanName: name,
-        weight: weight,
-        roast: roast,
-        notes: note
+    fetch(reqUrl, {
+        method: "POST",
+        body: JSON.stringify({
+            beanName: name,
+            weight: weight,
+            roast: roast,
+            notes: note
+        }),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }).then(function (res){
+        if (res.status === 200){
+            // adding HTML for tab 
+            var beanHTML = Handlebars.templates.bean({
 
+                beanName: name,
+                weight: weight,
+                roast: roast,
+                notes: note
+
+            })
+
+            var beanSection = document.getElementById('bean-section');
+            beanSection.insertAdjacentHTML("beforeend", beanHTML);
+
+        }
+        else{
+            alert("Something went wrong with the server!")
+        }
+    }).catch(function(err){
+        alert("Something went wrong communicating with the server!")
     })
 
-    
-
-    var beanSection = document.getElementById('bean-section');
-    beanSection.insertAdjacentHTML("beforeend", beanHTML);
-
-    beanEntries = Array.from(document.getElementsByClassName('beanEntry'))
-    console.log("== bean entry:", beanEntries);
-
-    
-
-    
     
 }
 

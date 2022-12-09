@@ -16,8 +16,5 @@ templates['bean'] = template({"compiler":[8,">= 4.3.0"],"main":function(containe
     + alias4(((helper = (helper = lookupProperty(helpers,"roast") || (depth0 != null ? lookupProperty(depth0,"roast") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"roast","hash":{},"data":data,"loc":{"start":{"line":1,"column":87},"end":{"line":1,"column":96}}}) : helper)))
     + "\" data-notes=\""
     + alias4(((helper = (helper = lookupProperty(helpers,"notes") || (depth0 != null ? lookupProperty(depth0,"notes") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"notes","hash":{},"data":data,"loc":{"start":{"line":1,"column":110},"end":{"line":1,"column":119}}}) : helper)))
-    + "\">\r\n    "
-    + alias4(((helper = (helper = lookupProperty(helpers,"beanName") || (depth0 != null ? lookupProperty(depth0,"beanName") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"beanName","hash":{},"data":data,"loc":{"start":{"line":2,"column":4},"end":{"line":2,"column":16}}}) : helper)))
-    + "\r\n</div>";
 },"useData":true});
 })();

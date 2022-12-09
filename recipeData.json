@@ -76,7 +76,7 @@
         },
         "chemex": {
             "name": "Chemex",
-            "img": "/filter/chemex.png",
+            "img": "/filter/chemex.jpg",
             "ingredients": "Coffee: 50g at medium-coarse grind / Water: 205F, 700g / Chemex Filter",
             "howto": "Prepare filter in brewer by prewettting it using water. Flatten the bed of coffee in the filter. There will be 4 total pours. The first pour of 100g will bloom the coffee and wait 45-55 seconds. Allow water to drain through grounds before pouring in 200g increments.",
             "diff": "Has a timeless glass design and the filters for it help make a clean cup of coffee. "
@@ -102,7 +102,7 @@
             "howto": "Saturate grounds with 60g of water for 10 seconds. After 45 seconds, pour water up to 200g. Pour water periodically in 50g amounts to target water at around 3:00.",
             "diff": "Is made out of stainless steel and uses a flat bottom to ensure even extraction!"
         },
-        "moka": {
+        "mokapot": {
             "name": "Moka",
             "img": "/filter/moka.jpg",
             "ingredients": "Coffee: 16g at very fine grind / Water: preheated and fill to max-fill edge of brewer ",
@@ -116,7 +116,7 @@
             "howto": "Pour initial 50ml to bloom coffee. After 40 seconds, slowly pour 200 ml of water.",
             "diff": "Elegant design and can use a variety of filters. "
         },
-        "stagg": {
+        "staggx": {
             "name": "Stagg X",
             "img": "/filter/stagg.jpg",
             "ingredients": "Coffee: 22g at medium-fine grind / Water: 350g, 205F / Stagg Filters",

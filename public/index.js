@@ -11,7 +11,7 @@ var modal = document.getElementById("modal-backdrop")
 var backdrop = document.getElementById("bean-counter-modal")
 var nameInput = document.getElementById("name-input")
 var weightInput = document.getElementById("weight-input")
-var roastFieldset = document.getElementById("roast-level")
+var roastFieldset = document.getElementById("roast-level-light")
 var notesInput = document.getElementById("note-input")
 var modalclose = document.getElementById("modal-close")
 var beanbutton = document.getElementById("bean-button")
@@ -32,7 +32,7 @@ modalclose.onclick = function(event){
         backdrop.style.display = "none";
         nameInput.value = "";
         weightInput.value = "";
-        roastFieldset.value = "";
+        roastFieldset.checked = true;
         notesInput.value = "";
     }
 }
@@ -43,10 +43,51 @@ window.onclick = function(event) {
         backdrop.style.display = "none";
         nameInput.value = "";
         weightInput.value = "";
-        roastFieldset.value = "";
+        roastFieldset.checked = true;
         notesInput.value = "";
     }
 }
+
+// Second Modal
+
+var modal2 = document.getElementById("modal-backdrop2")
+var backdrop2 = document.getElementById("bean-counter-modal2")
+var notesInput = document.getElementById("note-input")
+var modalclose2 = document.getElementById("modal-close2")
+
+userData.addEventListener("click", function() {
+    modal2.style.display = "block";
+    backdrop2.style.display = "block";
+})
+
+userData.addEventListener("click", function(){
+    document.getElementById("modal-backdrop2").classList.remove("hidden")
+    document.getElementById("bean-counter-modal2").classList.remove("hidden")
+})
+
+modalclose2.onclick = function(event){
+    if (event.target == modalclose2) {
+        modal2.style.display = "none";
+        backdrop2.style.display = "none";
+        nameInput.value = "";
+        weightInput.value = "";
+        roastFieldset.checked = true;
+        notesInput.value = "";
+    }
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById("bean-counter-modal2")) {
+        modal2.style.display = "none";
+        backdrop2.style.display = "none";
+        nameInput.value = "";
+        weightInput.value = "";
+        roastFieldset.checked = true;
+        notesInput.value = "";
+    }
+}
+
+
 
 var espressobutton = document.getElementById('espresso')
 var filterbutton = document.getElementById('filter')
@@ -62,6 +103,7 @@ filterbutton.addEventListener("click", function(){
     document.getElementById("filterSelector").classList.remove("hidden")
     document.getElementById("espressoSelector").classList.add("hidden")
 })
+
 
 // for adding another element
 var insertBeanButton = document.getElementById('modal-submit')
@@ -83,8 +125,6 @@ beanEntries.forEach(beanEntry =>{
     
 
 
-
-
 // timer
 import Timer from "/timer.js";
 
@@ -96,6 +136,7 @@ new Timer (
 // helper functions
 
 
+
 // clears inputs on exit
 function clearBeans(){
     document.getElementById('name-input').value = "";
@@ -103,3 +144,4 @@ function clearBeans(){
     document.getElementById('light').checked = true
     document.getElementById('note-input').value = "";
 }
+

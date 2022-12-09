@@ -95,10 +95,7 @@ modalclose2.onclick = function(event){
     if (event.target == modalclose2) {
         modal2.style.display = "none";
         backdrop2.style.display = "none";
-        nameInput.value = "";
-        weightInput.value = "";
-        roastFieldset.checked = true;
-        notesInput.value = "";
+
     }
 }
 
@@ -106,10 +103,6 @@ window.onclick = function(event) {
     if (event.target == document.getElementById("bean-counter-modal2")) {
         modal2.style.display = "none";
         backdrop2.style.display = "none";
-        nameInput.value = "";
-        weightInput.value = "";
-        roastFieldset.checked = true;
-        notesInput.value = "";
     }
 }
 

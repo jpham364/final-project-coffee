@@ -744,12 +744,24 @@ body{
     border-color: rgb(112,80, 29);
     transition: transform 0.3s ease;
     height: 60px;
-    width: 120px;
+    width: 150px;
     font-size: 200%;
 }
 
-#toggle button{
+#toggles button{
   margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#espresso {
+  display: flex;
+  align-items: center;
+}
+
+#submit-buttom {
+  display: flex;
+  align-items: center;
 }
 
 #steps{

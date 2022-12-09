@@ -81,10 +81,10 @@ export default class Timer {
             <span class="timer__part timer__part--minutes">00</span>
             <span class="timer__part">:</span>
             <span class="timer__part timer__part--seconds">00</span>
-            <button type="button" class="timer__btn timer__btn--control timer__btn--start">
+            <button type="button" id="play-button" class="timer__btn timer__btn--control timer__btn--start">
                 <span class="material-icons">play_arrow</span>
             </button>
-            <button type="button" class="timer__btn timer__btn--reset">
+            <button type="button" id="timer-button" class="timer__btn timer__btn--reset">
                 <span class="material-icons">timer</span>
             </button>
         `;
